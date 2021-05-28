@@ -3,13 +3,14 @@ module Control_Unit(
     input  [6:0]            opcode,
     input                   clk   ,
     input                   rst_n ,
+    input  [6:0]            funct7,
+    input  [2:0]            funct3,
+    input  [2:0]            ImmSel,
     output                  BrEq,BrLT,PCSel,BrUn,ASel,BSel,MemRW,RegWEn,
     output [1:0]            WBSel ,
     output [3:0]            ALUSel 
 );
-    wire [6:0] funct7;
-    wire [2:0] funct3;
-    wire [2:0] ImmSel,
+
 always @(*)
 begin
     case(opcode)
