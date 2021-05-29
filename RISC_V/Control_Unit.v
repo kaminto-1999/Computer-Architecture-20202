@@ -1,14 +1,21 @@
 `include "Parameter.v"
 module Control_Unit(
-    input  [6:0]            opcode,
-    input                   clk   ,
-    input                   rst_n ,
-    input  [6:0]            funct7,
-    input  [2:0]            funct3,
-    input  [2:0]            ImmSel,
-    output                  BrEq,BrLT,PCSel,BrUn,ASel,BSel,MemRW,RegWEn,
-    output [1:0]            WBSel ,
-    output [3:0]            ALUSel 
+    input  [6:0]            opcode ,
+    input                   clk    ,
+    input                   rst_n  ,
+    input  [6:0]            funct7 ,
+    input  [2:0]            funct3 ,
+    output [2:0]            ImmSel ,
+    output                  BrEq   ,
+    output                  BrLT   ,
+    output                  PCSel  ,
+    output                  BrUn   ,
+    output                  ASel   ,
+    output                  BSel   ,
+    output                  MemRW  ,
+    output                  RegWEn ,
+    output [1:0]            WBSel  ,
+    output [3:0]            ALUSel  
 );
 
 always @(*)
