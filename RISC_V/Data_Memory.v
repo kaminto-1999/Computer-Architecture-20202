@@ -1,16 +1,16 @@
 module Data_Memory(
  input  clk                     ,
  input  rst_n                   ,
- input  [DATA_WIDTH:0]   mem_access_addr,
- input  [DATA_WIDTH:0]   mem_write_data ,
+ input  [31:0]   mem_access_addr,
+ input  [31:0]   mem_write_data ,
  input           mem_write_en   ,
  input           mem_read       ,
- output [DATA_WIDTH:0]  mem_read_data
+ output [31:0]  mem_read_data
 );
 
-reg [DATA_WIDTH - 1:0] memory [`row_d - 1:0];
+reg [31:0] memory [7:0];
 integer f;
-wire [2:0] ram_addr=mem_access_addr[2:0];
+wire [2:0] ram_addr = mem_access_addr[2:0];
 //Load memory from file
   initial begin
     $readmemb("./test/test.data", memory);
