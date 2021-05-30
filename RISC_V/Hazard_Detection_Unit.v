@@ -11,6 +11,7 @@ always @(*)
   begin
     if(exMemRW == 0) && (ex_rd == id_AddrA)
       begin
+<<<<<<< HEAD
         PCWrite         = 32'b0;
         Reg_IF_ID_Data  = 32'b0;
       end
@@ -18,6 +19,15 @@ always @(*)
       begin
         PCWrite         = 32'b0;
         Reg_IF_ID_Data  = 32'b0;
+=======
+        PCReg           = 32'b00000000000000000000000000000000;
+        Reg_IF_ID_Data  = 32'b00000000000000000000000000000000;
+      end
+    if(exMemRW == 0) && (ex_rd == id_AddrB)
+      begin
+        PCReg           = 32'b00000000000000000000000000000000;
+        Reg_IF_ID_Data  = 32'b00000000000000000000000000000000;
+>>>>>>> 1721803a17a3680bc1e78dae6d73cc347bff4f2d
       end
   end
 endmodule
