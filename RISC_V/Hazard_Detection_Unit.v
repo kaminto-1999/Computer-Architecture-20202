@@ -11,13 +11,13 @@ always @(*)
   begin
     if(exMemRW == 0) && (ex_rd == id_AddrA)
       begin
-        PCReg           = 32'b0;
-        Reg_IF_ID_Data  = 32'b0;
+        PCReg           = 32'b00000000000000000000000000000000;
+        Reg_IF_ID_Data  = 32'b00000000000000000000000000000000;
       end
     if(exMemRW == 0) && (ex_rd == id_AddrB)
       begin
-        PCReg           = 32'b0;
-        Reg_IF_ID_Data  = 32'b0;
+        PCReg           = 32'b00000000000000000000000000000000;
+        Reg_IF_ID_Data  = 32'b00000000000000000000000000000000;
       end
   end
 endmodule
