@@ -3,7 +3,7 @@ module ALU(
   input  [31:0] b             ,  //src2
   input  [3:0]  ALUSel        , //function sel
   output [31:0] alu_result    ,  //alu_result 
-  output zero_flag            
+  output zero_flag             
   );
   assign zero_flag = (alu_result == 32'd0) ? 1'b1: 1'b0;
   always @(*)

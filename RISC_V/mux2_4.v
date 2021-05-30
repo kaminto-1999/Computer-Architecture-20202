@@ -5,7 +5,7 @@ module mux2_4 #(parameter BIT_WIDTH = 32)
   input  [BIT_WIDTH-1:0] in1,
   input  [BIT_WIDTH-1:0] in2,
   input  [BIT_WIDTH-1:0] in3,
-  output [BIT_WIDTH-1:0] out
+  output [BIT_WIDTH-1:0] out 
 );
 always @(*) begin
   case (sel)

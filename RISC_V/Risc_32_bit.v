@@ -17,6 +17,19 @@ module Risc_32_bit
   wire [6:0]  funct7                   ;
   wire [31:0] imm                      ;
 //=========================INSTANCE=========================//
+  wire [31:0] pc_plus_4       ,
+  wire [31:0] pc_next          
+  assign pc_plus_4 = pc_next + 32'h0004;
+  Reg_PC Reg_PC_i
+  (
+  .clk         (clk        ),
+  .rst_n       (rst_n      ),
+  .pc_plus_4   (pc_plus_4  ),
+  .ex_Alu_out (ex_ALU_out  ),
+  .PCWrite     (PCWrite    ),
+  .PCSel       (PCSel      ),
+  .pc_next     (pc_next    ) 
+  );
 //Datapath_Unit
   Execute_Unit Execute_Unit_i
   (
@@ -236,5 +249,25 @@ module Risc_32_bit
   .mem_MemRW (mem_MemRW ),
   .ForwardA  (ForwardA  ),
   .ForwardB  (ForwardB  ) 
+  );
+  mux2_4 ForwardA_mux
+  #(BIT_WIDTH = 32)
+  (
+  .sel(ForwardA   ),
+  .in0(ex_rs1     ),
+  .in1(ForwardData),
+  .in2(mem_ALU_out),
+  .in3(           ),
+  .out(Alu_sourceA) 
+  );
+  mux2_4 ForwardB_mux
+  #(BIT_WIDTH = 32)
+  (
+  .sel(ForwardB   ),
+  .in0(ex_rs2     ),
+  .in1(ForwardData),
+  .in2(mem_ALU_out),
+  .in3(           ),
+  .out(Alu_sourceB) 
   );
 endmodule
