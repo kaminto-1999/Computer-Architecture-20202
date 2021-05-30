@@ -9,12 +9,11 @@ module Reg_MEM_WB (
   input  wire [31:0] mem_imm    ,
   input  wire [31:0] mem_DataB  ,
   input  wire [31:0] mem_ALU_out,
-  //Output to MEM
-  output reg         wb_we     ,
-  output reg  [4:0]  wb_rd     ,//To Forwarding Unit
-  output reg  [31:0] wb_ALU_out,//To MUX
-  output reg  [31:0] wb_DataB  ,//To MUX
-  output reg  [31:0] wb_pc      
+  output reg         wb_we      ,
+  output reg  [4:0]  wb_rd      ,//To Forwarding Unit
+  output reg  [31:0] wb_ALU_out ,//To MUX
+  output reg  [31:0] wb_DataB   ,//To MUX
+  output reg  [31:0] wb_pc       
 );
 
   always @ (posedge clk) begin

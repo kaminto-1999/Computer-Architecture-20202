@@ -9,7 +9,7 @@ module Reg_EX_MEM (
   input  wire [31:0] ex_imm     ,
   input  wire [31:0] ex_DataB   ,
   input  wire [31:0] ex_ALU_out ,
-  //Output to MEM
+  //Output to MEM                
   output reg         mem_we     ,
   output reg  [4:0]  mem_rd     ,
   output reg  [31:0] mem_ALU_out,

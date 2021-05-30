@@ -21,7 +21,7 @@ module Reg_ID_EX (
   input              id_RegWEn  ,
   input       [1:0]  id_WBSel   ,
   input       [3:0]  id_ALUSel  ,
-  //Output
+  //output                       
   output reg         ex_we      ,
   output reg  [31:0] ex_DataA   ,
   output reg  [31:0] ex_DataB   ,
@@ -29,7 +29,7 @@ module Reg_ID_EX (
   output reg  [4:0]  ex_rd      ,
   output reg  [4:0]  ex_rs1     ,
   output reg  [4:0]  ex_rs2     ,
-  //Control signal Output
+  //Control signal output        
   output reg  [2:0]  ex_ImmSel  ,
   output reg         ex_BrEq    ,
   output reg         ex_BrLT    ,

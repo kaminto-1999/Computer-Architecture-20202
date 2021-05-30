@@ -6,7 +6,7 @@ module Reg_IF_ID (
   input  wire [5:0]  stall  ,
   input  wire        br     ,
   output reg  [31:0] id_pc  ,
-  output reg  [31:0] id_inst
+  output reg  [31:0] id_inst 
 );
 
   always @ (posedge clk or negedge rst_n) begin

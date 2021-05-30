@@ -12,7 +12,7 @@ module Instruction_Decode (
   assign opcode = instruction[6:0]  ; //Opcode to Control Unit
   assign rd     = instruction[11:7] ; //Register Destination
   assign rs1    = instruction[19:15]; //Register Source 1
-  assign rs2    = instruction[24:20]; //Register Source 1
+  assign rs2    = instruction[24:20]; //Register Source 2
   assign funct3 = instruction[14:12];
   assign funct7 = instruction[31:25];
 endmodule
