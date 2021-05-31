@@ -4,7 +4,6 @@ module Reg_EX_MEM (
   input  wire        rst_n      ,
   input  wire        ex_we      ,
   input  wire [4:0]  ex_rd      ,
-  input  wire [5:0]  stall      ,
   input  wire [31:0] ex_pc      ,
   input  wire [31:0] ex_imm     ,
   input  wire [31:0] ex_DataB   ,
@@ -18,14 +17,14 @@ module Reg_EX_MEM (
 );
 
   always @ (posedge clk) begin
-    if (!rst_n || (stall[3] && !stall[4])) begin // Reset hoac 
+    if (!rst_n) begin // Reset hoac 
       mem_pc       <= 0;
       mem_ALU_out  <= 0;
       mem_DataB    <= 0;
       mem_imm      <= 0;
       mem_we       <= 0;
       mem_rd       <= 0;
-    end else if (!stall[3]) begin
+    end else if (1) begin
       mem_pc       <= ex_pc     ;
       mem_ALU_out  <= ex_ALU_out;
       mem_DataB    <= ex_DataB  ;

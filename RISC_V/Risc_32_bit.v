@@ -240,34 +240,14 @@ module Risc_32_bit
   wire [1:0]  ForwardB;
   Forwarding_Unit Forwarding_Unit_i
   (
-  .ex_rs1    (ex_rs1    ),
-  .ex_rs2    (ex_rs2    ),
-  .mem_rd    (mem_rd    ),
-  .wb_rd     (wb_rd     ),
-  .mem_RegWEn(mem_RegWEn),
-  .wb_RegWEn (wb_RegWEn ),
-  .mem_MemRW (mem_MemRW ),
-  .ForwardA  (ForwardA  ),
-  .ForwardB  (ForwardB  ) 
-  );
-  mux2_4 ForwardA_mux
-  #(BIT_WIDTH = 32)
-  (
-  .sel(ForwardA   ),
-  .in0(ex_rs1     ),
-  .in1(ForwardData),
-  .in2(mem_ALU_out),
-  .in3(           ),
-  .out(Alu_sourceA) 
-  );
-  mux2_4 ForwardB_mux
-  #(BIT_WIDTH = 32)
-  (
-  .sel(ForwardB   ),
-  .in0(ex_rs2     ),
-  .in1(ForwardData),
-  .in2(mem_ALU_out),
-  .in3(           ),
-  .out(Alu_sourceB) 
+  .ex_rs1     (ex_rs1     ),
+  .ex_rs2     (ex_rs2     ),
+  .mem_rd     (mem_rd     ),
+  .wb_rd      (wb_rd      ),
+  .mem_RegWEn (mem_RegWEn ),
+  .wb_RegWEn  (wb_RegWEn  ),
+  .mem_MemRW  (mem_MemRW  ),
+  .ForwardASel(ForwardASel),
+  .ForwardBSel(ForwardBSel) 
   );
 endmodule

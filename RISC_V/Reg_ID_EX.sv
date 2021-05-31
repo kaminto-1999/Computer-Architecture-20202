@@ -4,7 +4,6 @@ module Reg_ID_EX (
   input  wire        rst_n      ,
   input  wire        id_we      ,
   input  wire [31:0] id_pc      ,
-  input  wire [5:0]  stall      ,
   input  wire [31:0] id_DataA   ,
   input  wire [31:0] id_DataB   ,
   input  wire [4:0]  id_rd      ,
@@ -29,7 +28,6 @@ module Reg_ID_EX (
   output reg  [4:0]  ex_rd      ,
   output reg  [4:0]  ex_rs1     ,
   output reg  [4:0]  ex_rs2     ,
-  //Control signal output        
   output reg  [2:0]  ex_ImmSel  ,
   output reg         ex_BrEq    ,
   output reg         ex_BrLT    ,
@@ -44,7 +42,7 @@ module Reg_ID_EX (
 );
 
   always @ (posedge clk) begin
-    if (!rst_n || (stall[2] && !stall[3])) begin
+    if (!rst_n) begin
       ex_pc    <= 0;
       ex_DataA <= 0;
       ex_DataB <= 0;
@@ -60,7 +58,7 @@ module Reg_ID_EX (
       ex_rd    <= 0;
       ex_rs1   <= 0;
       ex_rs2   <= 0;
-    end else if (!stall[2]) begin
+    end else if (1) begin
       ex_pc    <= id_pc    ;
       ex_DataA <= id_DataA ;
       ex_DataB <= id_DataB ;

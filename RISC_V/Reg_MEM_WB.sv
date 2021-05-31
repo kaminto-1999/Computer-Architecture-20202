@@ -4,7 +4,6 @@ module Reg_MEM_WB (
   input  wire        rst_n      ,
   input  wire        mem_we     ,
   input  wire [4:0]  mem_rd     ,
-  input  wire [5:0]  stall      ,
   input  wire [31:0] mem_pc     ,
   input  wire [31:0] mem_imm    ,
   input  wire [31:0] mem_DataB  ,
@@ -17,14 +16,14 @@ module Reg_MEM_WB (
 );
 
   always @ (posedge clk) begin
-    if (!rst_n || (stall[4] && !stall[5])) begin
+    if (!rst_n) begin
       wb_pc       <= 0;
       wb_ALU_out  <= 0;
       wb_DataB    <= 0;
       wb_imm      <= 0;
       wb_we       <= 0;
       wb_rd       <= 0;
-    end else if (!stall[4]) begin
+    end else if (1) begin
       wb_pc       <= mem_pc     ;
       wb_ALU_out  <= mem_ALU_out;
       wb_DataB    <= mem_DataB  ;

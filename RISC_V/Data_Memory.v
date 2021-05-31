@@ -14,15 +14,15 @@ module Data_Memory(
   initial begin
     $readmemb("./test/test.data", memory_array);
     f = $fopen(`filename);
-    $fmonitor(f, "time = %d\n", $time, 
-    "\tmemory_array[0] = %b\n", memory_array[0],
-    "\tmemory_array[1] = %b\n", memory_array[1],
-    "\tmemory_array[2] = %b\n", memory_array[2],
-    "\tmemory_array[3] = %b\n", memory_array[3],
-    "\tmemory_array[4] = %b\n", memory_array[4],
-    "\tmemory_array[5] = %b\n", memory_array[5],
-    "\tmemory_array[6] = %b\n", memory_array[6],
-    "\tmemory_array[7] = %b\n", memory_array[7]);
+//    $fmonitor(f, "time = %d\n", $time, 
+//    "\tmemory_array[0] = %b\n", memory_array[0],
+//    "\tmemory_array[1] = %b\n", memory_array[1],
+//    "\tmemory_array[2] = %b\n", memory_array[2],
+//    "\tmemory_array[3] = %b\n", memory_array[3],
+//    "\tmemory_array[4] = %b\n", memory_array[4],
+//    "\tmemory_array[5] = %b\n", memory_array[5],
+//    "\tmemory_array[6] = %b\n", memory_array[6],
+//    "\tmemory_array[7] = %b\n", memory_array[7]);
     `simulation_time;
     $fclose(f);
   end
