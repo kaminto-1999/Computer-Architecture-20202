@@ -6,7 +6,7 @@ module Instruction_Decode (
   output [4:0]            rs1             ,
   output [4:0]            rs2             ,
   output [2:0]            funct3          ,
-  output [6:0]            funct7          
+  output [6:0]            funct7           
 
 );
   assign opcode = instruction[6:0]  ; //Opcode to Control Unit

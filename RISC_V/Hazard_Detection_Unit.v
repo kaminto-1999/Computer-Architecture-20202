@@ -1,33 +1,30 @@
 module Hazard_Detection_Unit(
-      input      [4:0]   id_AddrA       ,
-      input  wire[4:0]   id_AddrB       ,
+      input      [4:0]   id_rs1         ,
+      input  wire[4:0]   id_rs2         ,
       input  wire[4:0]   ex_rd          ,
       input              ex_MemRW       ,
       output wire        PCWrite        ,
-      output wire[31:0]  Reg_IF_ID_Data  
+      output wire        Reg_IF_ID_Data  
 );
 
 always @(*)
   begin
-    if(exMemRW == 0) && (ex_rd == id_AddrA)
-      begin
-<<<<<<< HEAD
-        PCWrite         = 32'b0;
-        Reg_IF_ID_Data  = 32'b0;
-      end
-    if(exMemRW == 0) && (ex_rd == id_AddrB)
-      begin
-        PCWrite         = 32'b0;
-        Reg_IF_ID_Data  = 32'b0;
-=======
-        PCReg           = 32'b00000000000000000000000000000000;
-        Reg_IF_ID_Data  = 32'b00000000000000000000000000000000;
-      end
-    if(exMemRW == 0) && (ex_rd == id_AddrB)
-      begin
-        PCReg           = 32'b00000000000000000000000000000000;
-        Reg_IF_ID_Data  = 32'b00000000000000000000000000000000;
->>>>>>> 1721803a17a3680bc1e78dae6d73cc347bff4f2d
-      end
+    if(ex_MemRW == 0) && (ex_rd == id_rs1) begin
+      PCWrite         = 0;
+      Reg_IF_ID_Data  = 0;
+    end
+    else begin
+      PCWrite         = 1;
+      Reg_IF_ID_Data  = 1;
+    end
+
+    if(ex_MemRW == 0) && (ex_rd == id_rs2) begin
+      PCReg           = 0;
+      Reg_IF_ID_Data  = 0;
+    end
+    else begin
+      PCReg           = 1;
+      Reg_IF_ID_Data  = 1;
+    end
   end
 endmodule

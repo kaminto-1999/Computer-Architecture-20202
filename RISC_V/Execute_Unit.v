@@ -2,23 +2,23 @@
 module Execute_Unit(
   input        clk        ,
   input        rst_n      ,
-  input        BrUn       ,
-  input        ASel       ,
-  input        BSel       ,
+  input        id_BrUn    ,
+  input        id_ASel    ,
+  input        id_BSel    ,
   input        ex_pc      ,
   input        mem_ALU_out,
   input [1:0]  ForwardASel,//From Forwarding Unit
   input [1:0]  ForwardBSel,//From Forwarding Unit
   input [31:0] ex_DataA   ,
   input [31:0] ex_DataB   ,
-  input [31:0] WBData     ,
-  input [1:0]  WBSel      ,
-  input [3:0]  ALUSel     ,
-  input [7:0]  opcode     ,
   input [31:0] imm        ,
+  input [31:0] wb_WBData  ,
+  input [1:0]  ex_WBSel   ,
+  input [3:0]  ex_ALUSel  ,
+  input [7:0]  ex_opcode  ,
   output[31:0] ex_ALU_out ,
-  output       BrEq       ,
-  output       BrLT        
+  output       ex_BrEq    ,
+  output       ex_BrLT     
 );
   wire [31:0] ALU_DataA   ;
   wire [31:0] ALU_DataB   ;
@@ -33,7 +33,7 @@ module Execute_Unit(
   (
   .sel(ForwardSelA ),
   .in0(ex_DataA    ),
-  .in1(WBData      ),
+  .in1(wb_WBData   ),
   .in2(mem_ALU_out ),
   .in3(            ),
   .out(ForwardDataA) 

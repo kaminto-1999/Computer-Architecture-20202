@@ -1,21 +1,21 @@
 `include "Parameter.v"
 module Control_Unit(
-    input  [6:0]            opcode ,
-    input                   clk    ,
-    input                   rst_n  ,
-    input  [6:0]            funct7 ,
-    input  [2:0]            funct3 ,
-    input                   BrEq   ,
-    input                   BrLT   ,
-    output [2:0]            ImmSel ,
-    output                  PCSel  ,
-    output                  BrUn   ,
-    output                  ASel   ,
-    output                  BSel   ,
-    output                  MemRW  ,
-    output                  RegWEn ,
-    output [1:0]            WBSel  ,
-    output [3:0]            ALUSel  
+    input        clk    ,
+    input        rst_n  ,
+    input        BrEq   ,
+    input        BrLT   ,
+    input  [6:0] opcode ,
+    input  [6:0] funct7 ,
+    input  [2:0] funct3 ,
+    output [2:0] ImmSel ,
+    output       PCSel  ,
+    output       BrUn   ,
+    output       ASel   ,
+    output       BSel   ,
+    output       MemRW  ,
+    output       RegWEn ,
+    output [1:0] WBSel  ,
+    output [3:0] ALUSel  
 );
 
 always @(*)
@@ -36,7 +36,7 @@ begin
                     BrUn        = 1'bx;
                     ASel        = 0; //Reg
                     BSel        = 0; //Reg
-                    ALUSel      = ALUadd;
+                    ALUSel      = `ALUadd;
                     MemRW       = 0 //Read
                     RegWEn      = 1;
                     WBSel       = 2'b01 //ALU
@@ -48,7 +48,7 @@ begin
                     BrUn        = 1'bx;
                     ASel        = 0; //Reg
                     BSel        = 0; //Reg
-                    ALUSel      = ALUsub;
+                    ALUSel      = `ALUsub;
                     MemRW       = 0 //Read
                     RegWEn      = 1;
                     WBSel       = 2'b01 //ALU
@@ -61,7 +61,7 @@ begin
                 BrUn            = 1'bx;
                 ASel            = 0; //Reg
                 BSel            = 0; //Reg
-                ALUSel          = ALUsll;
+                ALUSel          = `ALUsll;
                 MemRW           = 0 //Read
                 RegWEn          = 1;
                 WBSel           = 2'b01 //ALU
@@ -73,7 +73,7 @@ begin
                 BrUn            = 1'bx;
                 ASel            = 0; //Reg
                 BSel            = 0; //Reg
-                ALUSel          = ALUslt;
+                ALUSel          = `ALUslt;
                 MemRW           = 0 //Read
                 RegWEn          = 1;
                 WBSel           = 2'b01 //ALU
@@ -85,7 +85,7 @@ begin
                 BrUn            = 1'bx;
                 ASel            = 0; //Reg
                 BSel            = 0; //Reg
-                ALUSel          = ALUsltu;
+                ALUSel          = `ALUsltu;
                 MemRW           = 0 //Read
                 RegWEn          = 1;
                 WBSel           = 2'b01 //ALU
@@ -97,7 +97,7 @@ begin
                 BrUn            = 1'bx;
                 ASel            = 0; //Reg
                 BSel            = 0; //Reg
-                ALUSel          = ALUxor;
+                ALUSel          = `ALUxor;
                 MemRW           = 0 //Read
                 RegWEn          = 1;
                 WBSel           = 2'b01 //ALU
@@ -111,7 +111,7 @@ begin
                     BrUn        = 1'bx;
                     ASel        = 0; //Reg
                     BSel        = 0; //Reg
-                    ALUSel      = ALUsrl;
+                    ALUSel      = `ALUsrl;
                     MemRW       = 0 //Read
                     RegWEn      = 1;
                     WBSel       = 2'b01 //ALU
@@ -123,7 +123,7 @@ begin
                     BrUn        = 1'bx;
                     ASel        = 0; //Reg
                     BSel        = 0; //Reg
-                    ALUSel      = ALUsra;
+                    ALUSel      = `ALUsra;
                     MemRW       = 0 //Read
                     RegWEn      = 1;
                     WBSel       = 2'b01 //ALU
@@ -136,7 +136,7 @@ begin
                 BrUn            = 1'bx;
                 ASel            = 0; //Reg
                 BSel            = 0; //Reg
-                ALUSel          = ALUor;
+                ALUSel          = `ALUor;
                 MemRW           = 0 //Read
                 RegWEn          = 1;
                 WBSel           = 2'b01 //ALU
@@ -148,7 +148,7 @@ begin
                 BrUn            = 1'bx;
                 ASel            = 0; //Reg
                 BSel            = 0; //Reg
-                ALUSel          = ALUand;
+                ALUSel          = `ALUand;
                 MemRW           = 0 //Read
                 RegWEn          = 1;
                 WBSel           = 2'b01 //ALU
@@ -161,7 +161,7 @@ begin
             BrUn                = 1'bx;
             ASel                = 0; //Reg
             BSel                = 1; //Imm
-            ALUSel              = ALUadd;
+            ALUSel              = `ALUadd;
             MemRW               = 0 //Read
             RegWEn              = 1;
             WBSel               = 2'b01 //ALU
@@ -173,7 +173,7 @@ begin
             BrUn                = 1'bx;
             ASel                = 0; //Reg
             BSel                = 1; //Imm
-            ALUSel              = ALUadd;
+            ALUSel              = `ALUadd;
             MemRW               = 0 //Read
             RegWEn              = 1;
             WBSel               = 2'b00 //Mem
@@ -185,7 +185,7 @@ begin
             BrUn                = 1'bx;
             ASel                = 0; //Reg
             BSel                = 1; //Imm
-            ALUSel              = ALUadd;
+            ALUSel              = `ALUadd;
             MemRW               = 1 //Write
             RegWEn              = 0;
             WBSel               = 2'bxx;
@@ -199,7 +199,7 @@ begin
                 BrUn            = 1'bx;
                 ASel            = 1; //PC
                 BSel            = 1; //Imm
-                ALUSel          = ALUadd;
+                ALUSel          = `ALUadd;
                 MemRW           = 0 //Read
                 RegWEn          = 0;
                 WBSel           = 2'bxx;
@@ -211,7 +211,7 @@ begin
                 BrUn            = 1'bx;
                 ASel            = 1; //PC
                 BSel            = 1; //Imm
-                ALUSel          = ALUadd;
+                ALUSel          = `ALUadd;
                 MemRW           = 0 //Read
                 RegWEn          = 0;
                 WBSel           = 2'bxx;
@@ -223,7 +223,7 @@ begin
                 BrUn            = 0;
                 ASel            = 1; //PC
                 BSel            = 1; //Imm
-                ALUSel          = ALUadd;
+                ALUSel          = `ALUadd;
                 MemRW           = 0 //Read
                 RegWEn          = 0;
                 WBSel           = 2'bxx;
@@ -235,7 +235,7 @@ begin
                 BrUn            = 1;
                 ASel            = 1; //PC
                 BSel            = 1; //Imm
-                ALUSel          = ALUadd;
+                ALUSel          = `ALUadd;
                 MemRW           = 0 //Read
                 RegWEn          = 0;
                 WBSel           = 2'bxx;
@@ -248,7 +248,7 @@ begin
             BrUn                = 1'bx;
             ASel                = 0; //Reg
             BSel                = 1; //Imm
-            ALUSel              = ALUadd;
+            ALUSel              = `ALUadd;
             MemRW               = 0 //Read
             RegWEn              = 1;
             WBSel               = 2'b10; // PC+4
@@ -260,7 +260,7 @@ begin
             BrUn                = 1'bx;
             ASel                = 1; //PC
             BSel                = 1; //Imm
-            ALUSel              = ALUadd;
+            ALUSel              = `ALUadd;
             MemRW               = 0 //Read
             RegWEn              = 1;
             WBSel               = 2'b10; // PC+4
@@ -272,12 +272,12 @@ begin
             BrUn                = 1'bx;
             ASel                = 1; //PC
             BSel                = 1; //Imm
-            ALUSel              = ALUadd;
+            ALUSel              = `ALUadd;
             MemRW               = 0 //Read
             RegWEn              = 1;
             WBSel               = 2'b01; // ALU
         end
-    default: ALUSel             = ALUnop;
+    default: ALUSel             = `ALUnop;
     endcase
 end
 endmodule

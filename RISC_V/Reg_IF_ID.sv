@@ -6,7 +6,6 @@ module Reg_IF_ID (
   output reg  [31:0] id_pc  ,
   output reg  [31:0] id_inst 
 );
-
   always @ (posedge clk or negedge rst_n) begin
     if (!rst_n) begin
       id_pc   <= 0;

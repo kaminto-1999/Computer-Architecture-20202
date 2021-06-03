@@ -8,8 +8,10 @@ module Reg_EX_MEM (
   input  wire [31:0] ex_imm     ,
   input  wire [31:0] ex_DataB   ,
   input  wire [31:0] ex_ALU_out ,
+  input  wire [1:0]  ex_WBSel   ,
   //Output to MEM                
   output reg         mem_we     ,
+  output reg  [1:0]  mem_WBSel  ,
   output reg  [4:0]  mem_rd     ,
   output reg  [31:0] mem_ALU_out,
   output reg  [31:0] mem_DataB  ,
@@ -24,6 +26,7 @@ module Reg_EX_MEM (
       mem_imm      <= 0;
       mem_we       <= 0;
       mem_rd       <= 0;
+      mem_WBSel    <= 0;
     end else if (1) begin
       mem_pc       <= ex_pc     ;
       mem_ALU_out  <= ex_ALU_out;
@@ -31,6 +34,7 @@ module Reg_EX_MEM (
       mem_imm      <= ex_imm    ;
       mem_we       <= ex_we     ;
       mem_rd       <= ex_rd     ;
+      mem_WBSel    <= ex_WBSel  ;
     end
   end
 

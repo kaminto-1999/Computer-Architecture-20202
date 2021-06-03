@@ -13,7 +13,7 @@ module Forwarding_Unit(
 always @(*)
   begin
   //EX hazard
-    if (mem_RegWEn == 1)&&(mem_MemRW == 1)&&(mem_rd!=5'b00000)&&(mem_rd!=ex_DataA)
+    if (mem_RegWEn == 1)&&(mem_MemRW == 1)&&(mem_rd!=5'b00000)&&(mem_rd!=ex_rs1)
       begin
         ForwardSelA = 2'b10;
       end
@@ -21,7 +21,7 @@ always @(*)
       begin
         ForwardSelA = 2'b00;
       end
-    if (mem_RegWEn == 1)&&(mem_MemRW == 1)&&(mem_rd!= 5'b00000)&&(mem_rd!=ex_DataB)
+    if (mem_RegWEn == 1)&&(mem_MemRW == 1)&&(mem_rd!= 5'b00000)&&(mem_rd!=ex_rs2)
       begin
         ForwardSelB = 2'b10;
       end
@@ -30,7 +30,7 @@ always @(*)
         ForwardSelB = 2'b00;
       end
   //MEM hazard
-    if (wb_RegWEn == 1)&&(mem_MemRW == 0)&&(wb_rd!= 5'b00000)&&(wb_rd!=ex_DataA)
+    if (wb_RegWEn == 1)&&(mem_MemRW == 0)&&(wb_rd!= 5'b00000)&&(wb_rd!=ex_rs1)
       begin
         ForwardSelA = 2'b01;
       end
@@ -38,7 +38,7 @@ always @(*)
       begin
         ForwardSelA = 2'b00;
       end
-    if (wb_RegWEn == 1)&&(mem_MemRW == 0)&&(wb_rd!= 5'b00000)&&(wb_rd!=ex_DataB)
+    if (wb_RegWEn == 1)&&(mem_MemRW == 0)&&(wb_rd!= 5'b00000)&&(wb_rd!=ex_rs2)
       begin
         ForwardSelB = 2'b01;
       end
