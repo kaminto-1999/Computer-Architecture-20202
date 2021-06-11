@@ -23,7 +23,7 @@ begin
     case(opcode)
     `NoP:
         begin
-            ALUSel              = ALUnop;
+            ALUSel              = `ALUnop;
         end
     `R:
         case(funct3)
@@ -32,7 +32,7 @@ begin
             7'b0000000: //add
                 begin
                     PCSel       = 0; //PC=PC+4
-                    ImmSel      = 3'bxxx;
+                    // ImmSel      = 3'bxxx;
                     BrUn        = 1'bx;
                     ASel        = 0; //Reg
                     BSel        = 0; //Reg
@@ -44,7 +44,7 @@ begin
             7'b0100000: //sub
                 begin
                     PCSel       = 0; //PC=PC+4
-                    ImmSel      = 3'bxxx;
+                    // ImmSel      = 3'bxxx;
                     BrUn        = 1'bx;
                     ASel        = 0; //Reg
                     BSel        = 0; //Reg
@@ -57,8 +57,8 @@ begin
         3'b001: //sll
             begin
                 PCSel           = 0; //PC=PC+4
-                ImmSel          = 3'bxxx;
-                BrUn            = 1'bx;
+                // ImmSel          = 3'bxxx;
+                // BrUn            = 1'bx;
                 ASel            = 0; //Reg
                 BSel            = 0; //Reg
                 ALUSel          = `ALUsll;
@@ -69,8 +69,8 @@ begin
         3'b010: //slt
             begin
                 PCSel           = 0; //PC=PC+4
-                ImmSel          = 3'bxxx;
-                BrUn            = 1'bx;
+                // ImmSel          = 3'bxxx;
+                // BrUn            = 1'bx;
                 ASel            = 0; //Reg
                 BSel            = 0; //Reg
                 ALUSel          = `ALUslt;
@@ -81,8 +81,8 @@ begin
         3'b011: //sltu
             begin
                 PCSel           = 0; //PC=PC+4
-                ImmSel          = 3'bxxx;
-                BrUn            = 1'bx;
+                // ImmSel          = 3'bxxx;
+                // BrUn            = 1'bx;
                 ASel            = 0; //Reg
                 BSel            = 0; //Reg
                 ALUSel          = `ALUsltu;
@@ -93,8 +93,8 @@ begin
         3'b100: //xor
             begin
                 PCSel           = 0; //PC=PC+4
-                ImmSel          = 3'bxxx;
-                BrUn            = 1'bx;
+                // ImmSel          = 3'bxxx;
+                // BrUn            = 1'bx;
                 ASel            = 0; //Reg
                 BSel            = 0; //Reg
                 ALUSel          = `ALUxor;
@@ -107,8 +107,8 @@ begin
             7'b0000000: //srl
                 begin
                     PCSel       = 0; //PC=PC+4
-                    ImmSel      = 3'bxxx;
-                    BrUn        = 1'bx;
+                    // ImmSel      = 3'bxxx;
+                    // BrUn        = 1'bx;
                     ASel        = 0; //Reg
                     BSel        = 0; //Reg
                     ALUSel      = `ALUsrl;
@@ -119,8 +119,8 @@ begin
             7'b0100000: //sra
                 begin
                     PCSel       = 0; //PC=PC+4
-                    ImmSel      = 3'bxxx;
-                    BrUn        = 1'bx;
+                    // ImmSel      = 3'bxxx;
+                    // BrUn        = 1'bx;
                     ASel        = 0; //Reg
                     BSel        = 0; //Reg
                     ALUSel      = `ALUsra;
@@ -132,8 +132,8 @@ begin
         3'b110: //or
             begin
                 PCSel           = 0; //PC=PC+4
-                ImmSel          = 3'bxxx;
-                BrUn            = 1'bx;
+                // ImmSel          = 3'bxxx;
+                // BrUn            = 1'bx;
                 ASel            = 0; //Reg
                 BSel            = 0; //Reg
                 ALUSel          = `ALUor;
@@ -144,8 +144,8 @@ begin
         3'b111: //and
             begin
                 PCSel           = 0; //PC=PC+4
-                ImmSel          = 3'bxxx;
-                BrUn            = 1'bx;
+                // ImmSel          = 3'bxxx;
+                // BrUn            = 1'bx;
                 ASel            = 0; //Reg
                 BSel            = 0; //Reg
                 ALUSel          = `ALUand;
@@ -158,7 +158,7 @@ begin
         begin
             PCSel               = 0; //PC=PC+4
             ImmSel              = 3'b000; //Immediate type I
-            BrUn                = 1'bx;
+            // BrUn                = 1'bx;
             ASel                = 0; //Reg
             BSel                = 1; //Imm
             ALUSel              = `ALUadd;
@@ -194,9 +194,9 @@ begin
         case(funct3)
         3'b000: //beq // Branchcomp block read BrEq and change PCSel
             begin
-                PCSel           = 0; //PC=PC+4 // temporary value
+                PCSel           = (BrEq) ? 1 : 0; //PC=PC+Imm when Eq, PC= PC+4 when not Eq
                 ImmSel          = 3'b010; //Immediate type B
-                BrUn            = 1'bx;
+                // BrUn            = 1'bx;
                 ASel            = 1; //PC
                 BSel            = 1; //Imm
                 ALUSel          = `ALUadd;
@@ -206,9 +206,9 @@ begin
             end
         3'b001: //bne //Branchcomp read BrEq and change PCSel
             begin
-                PCSel           = 1; //ALU // temporary value
+                PCSel           = (BrLT) ? 0 : 1; //ALU // temporary value
                 ImmSel          = 3'b010; //Immediate type B
-                BrUn            = 1'bx;
+                // BrUn            = 1'bx;
                 ASel            = 1; //PC
                 BSel            = 1; //Imm
                 ALUSel          = `ALUadd;
@@ -218,19 +218,19 @@ begin
             end
         3'b100: //blt //Branchcomp read BrLT and change PCSel
             begin
-                PCSel           = 0; //PC+4 // temporary value
+                PCSel           = (BrLT) ? 1 : 0; //PC+4 // temporary value
                 ImmSel          = 3'b010; //Immediate type B
                 BrUn            = 0;
                 ASel            = 1; //PC
                 BSel            = 1; //Imm
                 ALUSel          = `ALUadd;
-                MemRW           = 0 //Read
+                MemRW           = 0;//Read
                 RegWEn          = 0;
                 WBSel           = 2'bxx;
             end
         3'b101: //bltu //Branchcomp read BrLT and change PCSel
             begin
-                PCSel           = 0; //PC+4 // temporary value
+                PCSel           = (BrLT) ? 1 : 0; //PC+4 // temporary value
                 ImmSel          = 3'b010; //Immediate type B
                 BrUn            = 1;
                 ASel            = 1; //PC
@@ -245,7 +245,7 @@ begin
         begin
             PCSel               = 1; //ALU
             ImmSel              = 3'b000; //Immediate type I
-            BrUn                = 1'bx;
+            // BrUn                = 1'bx;
             ASel                = 0; //Reg
             BSel                = 1; //Imm
             ALUSel              = `ALUadd;
@@ -257,7 +257,6 @@ begin
         begin
             PCSel               = 1; //ALU
             ImmSel              = 3'b011; //Immediate type J
-            BrUn                = 1'bx;
             ASel                = 1; //PC
             BSel                = 1; //Imm
             ALUSel              = `ALUadd;

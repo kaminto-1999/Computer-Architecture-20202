@@ -178,9 +178,8 @@ module Risc_32_bit
   .ImmSel     (ex_ImmSel  ),
   .imm        (imm        ) 
   );
-
-//Reg_EX_MEM
-  wire        mem_we     ;
+//=========================Reg EX/MEM=========================//
+  wire        mem_MemRW  ;
   wire [4:0]  mem_rd     ;
   wire [31:0] mem_ALU_out;
   wire [31:0] mem_DataB  ;
@@ -190,22 +189,34 @@ module Risc_32_bit
   (
   .clk        (clk        ),
   .rst_n      (rst_n      ),
-  .ex_we      (ex_we      ),
+  .ex_MemRW   (ex_MemRW   ),
   .ex_rd      (ex_rd      ),
-  .stall      (stall      ),
+  .ex_rs2     (ex_rs2     ),
   .ex_pc      (ex_pc      ),
   .ex_imm     (ex_imm     ),
   .ex_DataB   (ex_DataB   ),
   .ex_ALU_out (ex_ALU_out ),
   .ex_WBSel   (ex_WBSel   ),
-  .mem_we     (mem_we     ),
-  .mem_WBSel  (mem_WBSel  ),
+  .mem_MemRW  (mem_MemRW  ),
   .mem_rd     (mem_rd     ),
+  .mem_rs2    (mem_rs2    ),
   .mem_ALU_out(mem_ALU_out),
   .mem_DataB  (mem_DataB  ),
-  .mem_pc     (mem_pc     ) 
+  .mem_pc     (mem_pc     ),
+  .mem_WBSel  (mem_WBSel  ),
   );
-//Reg_MEM_WB
+//=========================MEMORY ACCESS STATE=========================//
+  wire [31:0] DataB_out;
+  Data_Memory Data_Memory_i
+  (
+  .clk        (clk        ),
+  .rst_n      (rst_n      ),
+  .AddrB      (mem_AddrB  ),
+  .DataWrite  (mem_ALU_out),
+  .MemRW      (mem_MemRW  ),
+  .DataB      (DataB_out  ) //To Reg MEM_WB
+  );
+//=========================Reg_MEM_WB STATE=========================//
   wire        wb_we      ;
   wire [4:0]  wb_rd      ;
   wire [31:0] wb_ALU_out ;
@@ -220,7 +231,7 @@ module Risc_32_bit
   .stall      (stall      ),
   .mem_pc     (mem_pc     ),
   .mem_imm    (mem_imm    ),
-  .mem_DataB  (mem_DataB  ),
+  .mem_DataB  (DataB_out  ), //Come from Data Mem
   .mem_ALU_out(mem_ALU_out),
   .wb_we      (wb_we      ),
   .wb_rd      (wb_rd      ),
@@ -234,7 +245,7 @@ module Risc_32_bit
   #(32)
   (
   .sel(mem_WBSel    ),
-  .in0(mem_DataB    ),
+  .in0(DataB_out    ),
   .in1(mem_ALU_out  ),
   .in2(mem_pc_plus_4),
   .in3(),
