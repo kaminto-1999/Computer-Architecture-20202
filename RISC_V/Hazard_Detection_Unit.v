@@ -19,11 +19,11 @@ always @(*)
     end
 
     if(ex_MemRW == 0) && (ex_rd == id_rs2) begin
-      PCReg           = 0;
+      PCWrite         = 0;
       Reg_IF_ID_Data  = 0;
     end
     else begin
-      PCReg           = 1;
+      PCWrite         = 1;
       Reg_IF_ID_Data  = 1;
     end
   end

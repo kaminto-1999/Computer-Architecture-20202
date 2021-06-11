@@ -7,13 +7,13 @@ module Data_Memory(
  output [31:0]   DataB           
 );
 
-  reg [31:0] memory_array [99:0];
+  reg [31:0] memory_array [5:0];
   integer f;
   wire [2:0] addr = AddrB[2:0];
 //Load memory_array from file
   initial begin
-    $readmemb("./test/test.data", memory_array);
-    f = $fopen(`filename);
+    $readmemb(".mem.txt", memory_array);
+//    f = $fopen(`filename);
 //    $fmonitor(f, "time = %d\n", $time, 
 //    "\tmemory_array[0] = %b\n", memory_array[0],
 //    "\tmemory_array[1] = %b\n", memory_array[1],
@@ -23,8 +23,8 @@ module Data_Memory(
 //    "\tmemory_array[5] = %b\n", memory_array[5],
 //    "\tmemory_array[6] = %b\n", memory_array[6],
 //    "\tmemory_array[7] = %b\n", memory_array[7]);
-    `simulation_time;
-    $fclose(f);
+//    `simulation_time;
+//    $fclose(f);
   end
   always @(posedge clk or negedge rst_n) begin : proc_memory_array
     if(~rst_n) begin
@@ -35,7 +35,6 @@ module Data_Memory(
          memory_array[addr] <= DataWrite;
     end
   end
-
  assign DataB = (MemRW == 0) ? memory_array[addr]: 32'b0; 
 
 endmodule
