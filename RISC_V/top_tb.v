@@ -1,5 +1,4 @@
 `timescale 1ns / 1ps
-`include "Parameter.v"
 module top_tb();
  // Inputs
  reg clk;
@@ -12,8 +11,10 @@ module top_tb();
 
  initial 
   begin
-   clk <=0;
-   `simulation_time;
+    rst_n <= 0;
+    clk <=0;
+    #10 rst_n <= 1;
+    #200;
    $finish;
   end
 

@@ -10,7 +10,7 @@ module Reg_IF_ID (
     if (!rst_n) begin
       id_pc   <= 0;
       id_inst <= 0;
-    end else if () begin
+    end else begin
       id_pc   <= if_pc;
       id_inst <= if_inst;
     end

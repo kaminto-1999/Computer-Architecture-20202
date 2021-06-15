@@ -1,7 +1,7 @@
 module Instruction_Decode (
   input                   clk             ,// Clock
   input                   rst_n           ,// Asynchronous reset active low
-  input  [DATA_WIDTH-1:0] instruction     , // Instruction from Instruction Memory
+  input  [32:0]           instruction     , // Instruction from Instruction Memory
   output [4:0]            rd              ,
   output [4:0]            rs1             ,
   output [4:0]            rs2             ,

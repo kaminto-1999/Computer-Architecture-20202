@@ -6,45 +6,45 @@ module Forwarding_Unit(
       input              mem_RegWEn ,
       input              wb_RegWEn  ,
       input              mem_MemRW  ,
-      output reg  [1:0]  ForwardSelA,
-      output reg  [1:0]  ForwardSelB 
+      output reg  [1:0]  ForwardASel,
+      output reg  [1:0]  ForwardBSel 
   );
 
 always @(*)
   begin
   //EX hazard
-    if (mem_RegWEn == 1)&&(mem_MemRW == 1)&&(mem_rd!=5'b00000)&&(mem_rd!=ex_rs1)
+    if ((mem_RegWEn == 1)&&(mem_MemRW == 1)&&(mem_rd!=5'b00000)&&(mem_rd==ex_rs1))
       begin
-        ForwardSelA = 2'b10;
+        ForwardASel = 2'b10;
       end
     else
       begin
-        ForwardSelA = 2'b00;
+        ForwardASel = 2'b00;
       end
-    if (mem_RegWEn == 1)&&(mem_MemRW == 1)&&(mem_rd!= 5'b00000)&&(mem_rd!=ex_rs2)
+    if ((mem_RegWEn == 1)&&(mem_MemRW == 1)&&(mem_rd!= 5'b00000)&&(mem_rd==ex_rs2))
       begin
-        ForwardSelB = 2'b10;
+        ForwardBSel = 2'b10;
       end
     else
       begin
-        ForwardSelB = 2'b00;
+        ForwardBSel = 2'b00;
       end
   //MEM hazard
-    if (wb_RegWEn == 1)&&(mem_MemRW == 0)&&(wb_rd!= 5'b00000)&&(wb_rd!=ex_rs1)
+    if ((wb_RegWEn == 1)&&(mem_MemRW == 0)&&(wb_rd!= 5'b00000)&&(wb_rd==ex_rs1))
       begin
-        ForwardSelA = 2'b01;
+        ForwardASel = 2'b01;
       end
     else
       begin
-        ForwardSelA = 2'b00;
+        ForwardASel = 2'b00;
       end
-    if (wb_RegWEn == 1)&&(mem_MemRW == 0)&&(wb_rd!= 5'b00000)&&(wb_rd!=ex_rs2)
+    if ((wb_RegWEn == 1)&&(mem_MemRW == 0)&&(wb_rd!= 5'b00000)&&(wb_rd==ex_rs2))
       begin
-        ForwardSelB = 2'b01;
+        ForwardBSel = 2'b01;
       end
     else
       begin
-        ForwardSelB = 2'b00;
+        ForwardBSel = 2'b00;
       end
   end
 endmodule

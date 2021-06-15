@@ -10,8 +10,8 @@ module Reg_ID_EX (
   input  wire [4:0]  id_rs1     ,
   input  wire [4:0]  id_rs2     ,
   input       [2:0]  id_ImmSel  ,
-  input              id_BrEq    ,
-  input              id_BrLT    ,
+  input              id_PCSel   ,
+  input              id_BrUn    ,
   input              id_ASel    ,
   input              id_BSel    ,
   input              id_MemRW   ,
@@ -43,7 +43,6 @@ module Reg_ID_EX (
       ex_pc    <= 0;
       ex_DataA <= 0;
       ex_DataB <= 0;
-      ex_we    <= 0;
       ex_PCSel <= 0;
       ex_BrUn  <= 0;
       ex_ASel  <= 0;
@@ -53,12 +52,14 @@ module Reg_ID_EX (
       ex_rd    <= 0;
       ex_rs1   <= 0;
       ex_rs2   <= 0;
+      ex_ALUSel<= 0;
+      ex_ImmSel<= 0;
+      ex_WBSel <= 0;
     end else if (1) begin
       ex_inst  <= id_inst  ;
       ex_pc    <= id_pc    ;
       ex_DataA <= id_DataA ;
       ex_DataB <= id_DataB ;
-      ex_we    <= id_we    ;
       ex_PCSel <= id_PCSel ;
       ex_BrUn  <= id_BrUn  ;
       ex_ASel  <= id_ASel  ;
@@ -68,6 +69,9 @@ module Reg_ID_EX (
       ex_rd    <= id_rd    ;
       ex_rs1   <= id_rs1   ;
       ex_rs2   <= id_rs2   ;
+      ex_ALUSel<= id_ALUSel;
+      ex_ImmSel<= id_ImmSel;
+      ex_WBSel <= id_WBSel ;
     end
   end
 

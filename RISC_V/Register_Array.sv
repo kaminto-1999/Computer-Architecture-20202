@@ -10,10 +10,27 @@ module Register_Array (
     output reg  [31:0]        DataB   
 );
     reg[31:0]  regs[0:31];
-
+    initial begin
+        regs [1] = 32'd5;
+        regs [2] = 0;
+        regs [3] = 1;
+        regs [4] = 32'd10;
+        regs [5] = 1;
+        regs [6] = 0;
+        regs [7] = 1;
+        regs [8] = 0;
+        regs [9] = 1;
+        regs [10] = 0;
+        regs [11] = 1;
+        regs [12] = 0;
+        regs [13] = 1;
+    end
     // write
     always @ (posedge clk) begin
         if (!rst_n) begin
+            regs[0] <= 0;
+        end
+        else begin
             // x0 cannot be written
             if (RegWEn && AddrD != 0) begin
                 //$display("WRITE REGISTER FILE: x%d = %h", AddrD, DataD);
@@ -21,7 +38,6 @@ module Register_Array (
             end
         end
     end
-
     // read 1
     always @ (*) begin
         if (!rst_n || AddrA == 0) begin
