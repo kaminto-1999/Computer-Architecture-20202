@@ -1,0 +1,900 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Fri Jun 25 15:58:33 2021
+# Process ID: 12071
+# Current directory: /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga
+# Command line: vivado
+# Log file: /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/vivado.log
+# Journal file: /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/vivado.jou
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_7ev_cc_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_cc_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_pciecc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_pciecc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_som:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_som_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_ev_som_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_som_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_7ev_cc_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_cc_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_pciecc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_pciecc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_som:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_som_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_ev_som_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_som_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_7ev_cc_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_cc_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_pciecc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_pciecc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_som:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_som_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_ev_som_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_som_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_7ev_cc_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_cc_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_pciecc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_pciecc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_som:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_som_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_ev_som_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_som_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_7ev_cc_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_cc_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_pciecc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_pciecc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_som:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_som_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_ev_som_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_som_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_7ev_cc_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_cc_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_pciecc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_pciecc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_som:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_som_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_ev_som_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_som_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_7ev_cc_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_cc_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_pciecc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_pciecc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_som:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_som_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_ev_som_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_som_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_7ev_cc_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_cc_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_pciecc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_pciecc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_som:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_som_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_ev_som_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_som_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_7ev_cc_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_cc_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_pciecc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_pciecc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_som:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_som_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_ev_som_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_som_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_7ev_cc_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_cc_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_pciecc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_pciecc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_som:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_som_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_ev_som_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_som_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_7ev_cc_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_cc_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_pciecc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_pciecc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_som:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_som_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_ev_som_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_som_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_7ev_cc_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_cc_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_pciecc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_pciecc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_som:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_som_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_ev_som_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_som_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+create_project RISC-V-syn /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn -part xc7z020clg484-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.1/data/ip'.
+set_property board_part em.avnet.com:zed:part0:1.4 [current_project]
+add_files {/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/mux2_4.v /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/top_tb.v /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Parameter.sv /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_PC.v /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Parameter.v /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Execute_Unit.v /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Instruction_Decode.v /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_IF_ID.sv /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Data_Memory.v /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Imm_Gen.v /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/State_IF.v /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Forwarding_Unit.v /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_ID_EX.sv /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Hazard_Detection_Unit.v /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Instruction_Memory.v /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Register_Array.sv /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_EX_MEM.sv /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Control_Unit.v /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Risc_32_bit.v /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_MEM_WB.sv /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Branch_Comparator.v /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/ALU.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/top_tb.v] -no_script -reset -force -quiet
+remove_files  /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/top_tb.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Instruction_Decode.v] -no_script -reset -force -quiet
+remove_files  /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Instruction_Decode.v
+set_property top Risc_32_bit [current_fileset]
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 48
+[Fri Jun 25 16:01:07 2021] Launched synth_1...
+Run output will be captured here: /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.runs/synth_1/runme.log
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/top_tb.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-1
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:30 ; elapsed = 00:01:38 . Memory (MB): peak = 6967.180 ; gain = 371.902 ; free physical = 25387 ; free virtual = 107028
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.90 . Memory (MB): peak = 7271.238 ; gain = 0.000 ; free physical = 23410 ; free virtual = 106393
+report_utilization -name utilization_2
+report_utilization: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.83 . Memory (MB): peak = 7278.590 ; gain = 0.000 ; free physical = 23352 ; free virtual = 106381
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-1
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.73 . Memory (MB): peak = 7294.746 ; gain = 0.000 ; free physical = 21338 ; free virtual = 106032
+report_power -name {power_1}
+Command: report_power -name power_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Power 33-232] No user defined clocks were found in the design!
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+1 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+close_design
+create_bd_design "design_1"
+Wrote  : </data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd> 
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+ipx::package_project -root_dir /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn -vendor user.org -library user -taxonomy /UserIP -import_files -set_current false
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Parameter.sv'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Parameter.v'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd'.
+INFO: [IP_Flow 19-5169] Module 'Risc_32_bit' uses SystemVerilog sources with a Verilog top file. These SystemVerilog files will not be analysed by the packager.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst_n' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'rst_n': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+ipx::unload_core /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.1/data/ip'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 7486.918 ; gain = 0.000 ; free physical = 20634 ; free virtual = 105691
+current_project RISC-V-syn
+current_project tmp_edit_project
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property core_revision 2 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+set_property  ip_repo_paths  /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+update_ip_catalog
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+open_bd_design {/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+create_bd_cell -type ip -vlnv user.org:user:Risc_32_bit:1.0 Risc_32_bit_0
+endgroup
+startgroup
+create_bd_port -dir I -type clk clk
+connect_bd_net [get_bd_pins /Risc_32_bit_0/clk] [get_bd_ports clk]
+set_property CONFIG.FREQ_HZ 100000000 [get_bd_ports clk]
+endgroup
+startgroup
+create_bd_port -dir I -type rst rst_n
+connect_bd_net [get_bd_pins /Risc_32_bit_0/rst_n] [get_bd_ports rst_n]
+endgroup
+validate_bd_design
+regenerate_bd_layout
+save_bd_design
+Wrote  : </data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+generate_target all [get_files  /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Risc_32_bit_0 .
+Exporting to file /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+catch { config_ip_cache -export [get_ips -all design_1_Risc_32_bit_0_0] }
+export_ip_user_files -of_objects [get_files /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 48 design_1_Risc_32_bit_0_0_synth_1
+[Fri Jun 25 16:34:37 2021] Launched design_1_Risc_32_bit_0_0_synth_1...
+Run output will be captured here: /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.runs/design_1_Risc_32_bit_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd] -directory /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.ip_user_files/sim_scripts -ip_user_files_dir /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.ip_user_files -ipstatic_source_dir /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.ip_user_files/ipstatic -lib_map_path [list {modelsim=/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.cache/compile_simlib/modelsim} {questa=/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.cache/compile_simlib/questa} {ies=/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.cache/compile_simlib/ies} {xcelium=/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.cache/compile_simlib/xcelium} {vcs=/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.cache/compile_simlib/vcs} {riviera=/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd] -top
+add_files -norecurse /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+update_compile_order -fileset sources_1
+set_property top design_1_wrapper [current_fileset]
+update_compile_order -fileset sources_1
+generate_target all [get_files  /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1637] Generated targets are already up-to-date for bd-design 'design_1' - hence not re-generating.
+catch { config_ip_cache -export [get_ips -all design_1_Risc_32_bit_0_0] }
+export_ip_user_files -of_objects [get_files /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 48 design_1_Risc_32_bit_0_0_synth_1
+[Fri Jun 25 16:35:20 2021] Launched design_1_Risc_32_bit_0_0_synth_1...
+Run output will be captured here: /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.runs/design_1_Risc_32_bit_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd] -directory /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.ip_user_files/sim_scripts -ip_user_files_dir /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.ip_user_files -ipstatic_source_dir /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.ip_user_files/ipstatic -lib_map_path [list {modelsim=/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.cache/compile_simlib/modelsim} {questa=/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.cache/compile_simlib/questa} {ies=/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.cache/compile_simlib/ies} {xcelium=/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.cache/compile_simlib/xcelium} {vcs=/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.cache/compile_simlib/vcs} {riviera=/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+launch_runs synth_1 -jobs 48
+[Fri Jun 25 16:35:28 2021] Launched design_1_Risc_32_bit_0_0_synth_1...
+Run output will be captured here: /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.runs/design_1_Risc_32_bit_0_0_synth_1/runme.log
+[Fri Jun 25 16:35:28 2021] Launched synth_1...
+Run output will be captured here: /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-1
+INFO: [Project 1-454] Reading design checkpoint '/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/ip/design_1_Risc_32_bit_0_0/design_1_Risc_32_bit_0_0.dcp' for cell 'design_1_i/Risc_32_bit_0'
+INFO: [Project 1-454] Reading design checkpoint '/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/ip/design_1_Risc_32_bit_0_0/design_1_Risc_32_bit_0_0.dcp' for cell 'design_1_i/Risc_32_bit_0'
+ERROR: [Common 17-70] Application Exception: Failed to stitch checkpoint '/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/ip/design_1_Risc_32_bit_0_0/design_1_Risc_32_bit_0_0.dcp' at cell 'design_1_i/Risc_32_bit_0'.
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-1
+INFO: [Project 1-454] Reading design checkpoint '/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/ip/design_1_Risc_32_bit_0_0/design_1_Risc_32_bit_0_0.dcp' for cell 'design_1_i/Risc_32_bit_0'
+INFO: [Project 1-454] Reading design checkpoint '/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/ip/design_1_Risc_32_bit_0_0/design_1_Risc_32_bit_0_0.dcp' for cell 'design_1_i/Risc_32_bit_0'
+ERROR: [Common 17-70] Application Exception: Failed to stitch checkpoint '/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/ip/design_1_Risc_32_bit_0_0/design_1_Risc_32_bit_0_0.dcp' at cell 'design_1_i/Risc_32_bit_0'.
+set_property top Risc_32_bit [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 48
+[Fri Jun 25 16:54:24 2021] Launched synth_1...
+Run output will be captured here: /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-1
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+report_utilization -file /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/power.txt -name utilization_1
+report_utilization: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.99 . Memory (MB): peak = 7809.410 ; gain = 0.000 ; free physical = 21459 ; free virtual = 112958
+report_clock_networks -name {network_1}
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+open_bd_design {/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd}
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+reset_run synth_1
+launch_runs synth_1 -jobs 48
+[Fri Jun 25 21:30:51 2021] Launched synth_1...
+Run output will be captured here: /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+launch_runs synth_1 -jobs 48
+[Fri Jun 25 21:33:41 2021] Launched synth_1...
+Run output will be captured here: /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 48
+[Fri Jun 25 21:53:18 2021] Launched synth_1...
+Run output will be captured here: /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.runs/synth_1/runme.log
+reset_run synth_1
+generate_target all [get_files  /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1637] Generated targets are already up-to-date for bd-design 'design_1' - hence not re-generating.
+export_ip_user_files -of_objects [get_files /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd]
+export_simulation -of_objects [get_files /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd] -directory /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.ip_user_files/sim_scripts -ip_user_files_dir /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.ip_user_files -ipstatic_source_dir /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.ip_user_files/ipstatic -lib_map_path [list {modelsim=/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.cache/compile_simlib/modelsim} {questa=/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.cache/compile_simlib/questa} {ies=/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.cache/compile_simlib/ies} {xcelium=/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.cache/compile_simlib/xcelium} {vcs=/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.cache/compile_simlib/vcs} {riviera=/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+ipx::package_project -root_dir /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn -vendor user.org -library user -taxonomy /UserIP -import_files -set_current false -force
+WARNING: [IP_Flow 19-4963] design_1_Risc_32_bit_0_0 has board value specified. The packaged IP will be restricted to usage with board 'em.avnet.com:zed:part0:1.4'
+WARNING: [IP_Flow 19-3836] Not packaging cyclic XCI subcore '/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/ip/design_1_Risc_32_bit_0_0/design_1_Risc_32_bit_0_0.xci'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Parameter.sv'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Parameter.v'.
+INFO: [IP_Flow 19-5169] Module 'Risc_32_bit' uses SystemVerilog sources with a Verilog top file. These SystemVerilog files will not be analysed by the packager.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst_n' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'rst_n': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+ipx::unload_core /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.1/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 8518.477 ; gain = 0.000 ; free physical = 7956 ; free virtual = 124194
+current_project RISC-V-syn
+current_project tmp_edit_project
+update_compile_order -fileset sources_1
+current_project RISC-V-syn
+set_property core_revision 2 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+current_project tmp_edit_project
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn'
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+open_bd_design {/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd}
+export_ip_user_files -of_objects  [get_files /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v] -no_script -reset -force -quiet
+remove_files  /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+export_ip_user_files -of_objects  [get_files /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd] -no_script -reset -force -quiet
+remove_files  /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd
+file delete -force /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1
+launch_runs synth_1 -jobs 48
+[Fri Jun 25 21:55:38 2021] Launched synth_1...
+Run output will be captured here: /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-1
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+export_ip_user_files -of_objects  [get_files /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Risc_32_bit.v] -no_script -reset -force -quiet
+remove_files  /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Risc_32_bit.v
+add_files -norecurse /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Risc_32_bit_fpga.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/top_tb.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/top_tb.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -norecurse /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/State_IF_fpga.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Data_Memory.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/State_IF.v] -no_script -reset -force -quiet
+remove_files  {/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Data_Memory.v /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/State_IF.v}
+reset_run synth_1
+close_design
+launch_runs synth_1 -jobs 48
+[Fri Jun 25 22:23:42 2021] Launched synth_1...
+Run output will be captured here: /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 48
+[Fri Jun 25 22:35:05 2021] Launched synth_1...
+Run output will be captured here: /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-1
+INFO: [Netlist 29-17] Analyzing 538 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:16 ; elapsed = 00:00:02 . Memory (MB): peak = 8937.543 ; gain = 0.000 ; free physical = 7457 ; free virtual = 124124
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+open_project /data1/workspace/phucph0/new/study/viterbi/fpga/viterbi_syn/viterbi_syn.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'design_1_VITERBI_0_0_synth_1' not found
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/data1/workspace/phucph0/new/study/viterbi/fpga/viterbi_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.1/data/ip'.
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-1
+INFO: [Project 1-454] Reading design checkpoint '/data1/workspace/phucph0/new/study/viterbi/fpga/viterbi_syn/viterbi_syn.srcs/sources_1/bd/design_1/ip/design_1_VITERBI_0_0/design_1_VITERBI_0_0.dcp' for cell 'design_1_i/VITERBI_0'
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+reset_run synth_1
+launch_runs synth_1 -jobs 48
+[Fri Jun 25 22:54:37 2021] Launched design_1_VITERBI_0_0_synth_1...
+Run output will be captured here: /data1/workspace/phucph0/new/study/viterbi/fpga/viterbi_syn/viterbi_syn.runs/design_1_VITERBI_0_0_synth_1/runme.log
+[Fri Jun 25 22:54:37 2021] Launched synth_1...
+Run output will be captured here: /data1/workspace/phucph0/new/study/viterbi/fpga/viterbi_syn/viterbi_syn.runs/synth_1/runme.log
+close_design
+open_bd_design {/data1/workspace/phucph0/new/study/viterbi/fpga/viterbi_syn/viterbi_syn.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- user.org:user:VITERBI:1.0 - VITERBI_0
+Successfully read diagram <design_1> from BD file </data1/workspace/phucph0/new/study/viterbi/fpga/viterbi_syn/viterbi_syn.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 9271.195 ; gain = 0.000 ; free physical = 3980 ; free virtual = 120704
+make_wrapper -files [get_files /data1/workspace/phucph0/new/study/viterbi/fpga/viterbi_syn/viterbi_syn.srcs/sources_1/bd/design_1/design_1.bd] -top
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-1
+INFO: [Project 1-454] Reading design checkpoint '/data1/workspace/phucph0/new/study/viterbi/fpga/viterbi_syn/viterbi_syn.srcs/sources_1/bd/design_1/ip/design_1_VITERBI_0_0/design_1_VITERBI_0_0.dcp' for cell 'design_1_i/VITERBI_0'
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+open_bd_design {/data1/workspace/phucph0/new/study/viterbi/fpga/viterbi_syn/viterbi_syn.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_nets reset_rtl_1] [get_bd_ports reset_rtl]
+delete_bd_objs [get_bd_nets clk_1] [get_bd_ports clk]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "New Clocking Wizard (100 MHz)" }  [get_bd_pins VITERBI_0/clk]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config {rst_polarity "ACTIVE_HIGH" }  [get_bd_pins clk_wiz_0/reset]
+INFO: [board_rule 100-100] create_bd_port -dir I reset_rtl -type rst
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY  /reset_rtl
+INFO: [board_rule 100-100] connect_bd_net /reset_rtl /clk_wiz_0/reset
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY ACTIVE_HIGH /reset_rtl
+WARNING: [board_rule 100-100] Board automation did not generate location constraint for /clk_wiz_0/reset. Users may need to specify the location constraint manually.
+apply_bd_automation -rule xilinx.com:bd_rule:board -config {Board_Interface "sys_clock ( System clock ) " }  [get_bd_pins clk_wiz_0/clk_in1]
+INFO: [board_rule 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /clk_wiz_0]
+INFO: [board_rule 100-100] set_property CONFIG.CLK_IN1_BOARD_INTERFACE sys_clock [get_bd_cells /clk_wiz_0]
+INFO: [board_rule 100-100] create_bd_port -dir I sys_clock -type clk
+INFO: [board_rule 100-100] set_property CONFIG.FREQ_HZ 100000000 /sys_clock
+INFO: [board_rule 100-100] set_property CONFIG.PHASE 0.000 /sys_clock
+INFO: [board_rule 100-100] connect_bd_net /sys_clock /clk_wiz_0/clk_in1
+INFO: [board_rule 100-100] set_property CONFIG.FREQ_HZ 100000000 /sys_clock
+endgroup
+delete_bd_objs [get_bd_nets clk_wiz_clk_out1] [get_bd_cells clk_wiz]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins VITERBI_0/clk]
+validate_bd_design
+WARNING: [BD 41-927] Following properties on pin /VITERBI_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_0_clk_out1 
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/VITERBI_0/rst_n
+
+connect_bd_net [get_bd_ports reset_rtl] [get_bd_pins VITERBI_0/rst_n]
+save_bd_design
+Wrote  : </data1/workspace/phucph0/new/study/viterbi/fpga/viterbi_syn/viterbi_syn.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </data1/workspace/phucph0/new/study/viterbi/fpga/viterbi_syn/viterbi_syn.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+startgroup
+set_property -dict [list CONFIG.RESET_TYPE {ACTIVE_LOW} CONFIG.RESET_PORT {resetn}] [get_bd_cells clk_wiz_0]
+WARNING: [BD 41-1684] Pin /clk_wiz_0/reset is now disabled. All connections to this pin have been removed. 
+endgroup
+set_property -dict [list CONFIG.POLARITY {ACTIVE_LOW}] [get_bd_ports reset_rtl]
+connect_bd_net [get_bd_ports reset_rtl] [get_bd_pins clk_wiz_0/resetn]
+set_property -dict [list CONFIG.FREQ_HZ {150000000}] [get_bd_ports sys_clock]
+save_bd_design
+Wrote  : </data1/workspace/phucph0/new/study/viterbi/fpga/viterbi_syn/viterbi_syn.srcs/sources_1/bd/design_1/design_1.bd> 
+reset_run synth_1
+launch_runs synth_1 -jobs 48
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'PRIM_IN_FREQ' from '100.000' to '150.000' has been ignored for IP 'clk_wiz_0'
+WARNING: [BD 41-927] Following properties on pin /VITERBI_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_0_clk_out1 
+Wrote  : </data1/workspace/phucph0/new/study/viterbi/fpga/viterbi_syn/viterbi_syn.srcs/sources_1/bd/design_1/design_1.bd> 
+VHDL Output written to : /data1/workspace/phucph0/new/study/viterbi/fpga/viterbi_syn/viterbi_syn.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : /data1/workspace/phucph0/new/study/viterbi/fpga/viterbi_syn/viterbi_syn.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /data1/workspace/phucph0/new/study/viterbi/fpga/viterbi_syn/viterbi_syn.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VITERBI_0 .
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_7ev_cc_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_cc_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_pciecc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_pciecc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_som:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_som_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_ev_som_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_som_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_7ev_cc_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_cc_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_pciecc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_pciecc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_som:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_som_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_ev_som_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_som_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_7ev_cc_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_cc_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_pciecc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_pciecc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_som:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_som_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_ev_som_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_som_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+Exporting to file /data1/workspace/phucph0/new/study/viterbi/fpga/viterbi_syn/viterbi_syn.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /data1/workspace/phucph0/new/study/viterbi/fpga/viterbi_syn/viterbi_syn.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /data1/workspace/phucph0/new/study/viterbi/fpga/viterbi_syn/viterbi_syn.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_VITERBI_0_0, cache-ID = 3ca5aeaa134ba4a8; cache size = 0.874 MB.
+[Fri Jun 25 23:02:52 2021] Launched design_1_clk_wiz_0_0_synth_1...
+Run output will be captured here: /data1/workspace/phucph0/new/study/viterbi/fpga/viterbi_syn/viterbi_syn.runs/design_1_clk_wiz_0_0_synth_1/runme.log
+[Fri Jun 25 23:02:52 2021] Launched synth_1...
+Run output will be captured here: /data1/workspace/phucph0/new/study/viterbi/fpga/viterbi_syn/viterbi_syn.runs/synth_1/runme.log
+make_wrapper -files [get_files /data1/workspace/phucph0/new/study/viterbi/fpga/viterbi_syn/viterbi_syn.srcs/sources_1/bd/design_1/design_1.bd] -top
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-1
+INFO: [Project 1-454] Reading design checkpoint '/data1/workspace/phucph0/new/study/viterbi/fpga/viterbi_syn/viterbi_syn.srcs/sources_1/bd/design_1/ip/design_1_VITERBI_0_0/design_1_VITERBI_0_0.dcp' for cell 'design_1_i/VITERBI_0'
+INFO: [Project 1-454] Reading design checkpoint '/data1/workspace/phucph0/new/study/viterbi/fpga/viterbi_syn/viterbi_syn.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.dcp' for cell 'design_1_i/clk_wiz_0'
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/data1/workspace/phucph0/new/study/viterbi/fpga/viterbi_syn/viterbi_syn.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [/data1/workspace/phucph0/new/study/viterbi/fpga/viterbi_syn/viterbi_syn.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [/data1/workspace/phucph0/new/study/viterbi/fpga/viterbi_syn/viterbi_syn.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/data1/workspace/phucph0/new/study/viterbi/fpga/viterbi_syn/viterbi_syn.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [/data1/workspace/phucph0/new/study/viterbi/fpga/viterbi_syn/viterbi_syn.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+Finished Parsing XDC File [/data1/workspace/phucph0/new/study/viterbi/fpga/viterbi_syn/viterbi_syn.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+report_utilization -file /data1/workspace/phucph0/new/study/viterbi/fpga/viterbi_syn/power.txt -name utilization_1
+report_utilization: Time (s): cpu = 00:00:28 ; elapsed = 00:00:02 . Memory (MB): peak = 9706.352 ; gain = 0.000 ; free physical = 4671 ; free virtual = 121427
+report_ssn -name ssn_1 -file /data1/workspace/phucph0/new/study/viterbi/fpga/viterbi_syn/noise.txt
+CRITICAL WARNING: [Designutils 20-874] The following port(s) are unplaced. SSN analysis is incomplete until all ports are placed.
+    1. data_out
+    2. data_out_en
+
+INFO: [Designutils 20-1021] SSN analysis is only relevant to output and bidirectional ports.  Input ports are not used in the analysis, and are not shown in the Noise report.
+    1. data_in
+    2. data_in_en
+    3. reset_rtl
+    4. sys_clock
+
+INFO: [Coretcl 2-1142] Start SSN Analysis...
+report_operating_conditions -grade -return_string
+open_bd_design {/data1/workspace/phucph0/new/study/viterbi/fpga/viterbi_syn/viterbi_syn.srcs/sources_1/bd/design_1/design_1.bd}
+close_project
+create_bd_design "design_1"
+Wrote  : </data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd> 
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+ipx::package_project -root_dir /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn -vendor user.org -library user -taxonomy /UserIP -import_files -set_current false -force
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Instruction_Memory.v'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Parameter.sv'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Parameter.v'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd'.
+INFO: [IP_Flow 19-5169] Module 'Risc_32_bit_fpga' uses SystemVerilog sources with a Verilog top file. These SystemVerilog files will not be analysed by the packager.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst_n' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'rst_n': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+ipx::unload_core /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.1/data/ip'.
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 9706.352 ; gain = 0.000 ; free physical = 99419 ; free virtual = 142175
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 9706.352 ; gain = 0.000 ; free physical = 99420 ; free virtual = 142176
+update_compile_order -fileset sources_1
+set_property core_revision 2 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+set_property  ip_repo_paths  /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+ipx::open_ipxact_file /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/component.xml
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Instruction_Memory.v'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Parameter.sv'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Parameter.v'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd'.
+WARNING: [IP_Flow 19-5226] Project source file '/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/component.xml' ignored by IP packager.
+WARNING: [IP_Flow 19-4308] Project file '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/ALU.v' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+WARNING: [IP_Flow 19-4308] Project file '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Branch_Comparator.v' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+WARNING: [IP_Flow 19-4308] Project file '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Control_Unit.v' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+WARNING: [IP_Flow 19-4308] Project file '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Execute_Unit.v' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+WARNING: [IP_Flow 19-4308] Project file '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Forwarding_Unit.v' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+WARNING: [IP_Flow 19-4308] Project file '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Hazard_Detection_Unit.v' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+WARNING: [IP_Flow 19-4308] Project file '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Imm_Gen.v' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+WARNING: [IP_Flow 19-4308] Project file '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_PC.v' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+WARNING: [IP_Flow 19-4308] Project file '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/State_IF_fpga.v' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+WARNING: [IP_Flow 19-4308] Project file '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/mux2_4.v' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+WARNING: [IP_Flow 19-4308] Project file '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_EX_MEM.sv' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+WARNING: [IP_Flow 19-4308] Project file '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_ID_EX.sv' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+WARNING: [IP_Flow 19-4308] Project file '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_IF_ID.sv' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+WARNING: [IP_Flow 19-4308] Project file '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_MEM_WB.sv' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+WARNING: [IP_Flow 19-4308] Project file '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Register_Array.sv' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+WARNING: [IP_Flow 19-4308] Project file '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Risc_32_bit_fpga.v' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+WARNING: [IP_Flow 19-4308] Project file '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/ALU.v' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+WARNING: [IP_Flow 19-4308] Project file '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Branch_Comparator.v' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+WARNING: [IP_Flow 19-4308] Project file '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Control_Unit.v' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+WARNING: [IP_Flow 19-4308] Project file '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Execute_Unit.v' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+WARNING: [IP_Flow 19-4308] Project file '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Forwarding_Unit.v' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+WARNING: [IP_Flow 19-4308] Project file '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Hazard_Detection_Unit.v' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+WARNING: [IP_Flow 19-4308] Project file '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Imm_Gen.v' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+WARNING: [IP_Flow 19-4308] Project file '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_PC.v' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+WARNING: [IP_Flow 19-4308] Project file '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/State_IF_fpga.v' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+WARNING: [IP_Flow 19-4308] Project file '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/mux2_4.v' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+WARNING: [IP_Flow 19-4308] Project file '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_EX_MEM.sv' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+WARNING: [IP_Flow 19-4308] Project file '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_ID_EX.sv' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+WARNING: [IP_Flow 19-4308] Project file '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_IF_ID.sv' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+WARNING: [IP_Flow 19-4308] Project file '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_MEM_WB.sv' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+WARNING: [IP_Flow 19-4308] Project file '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Register_Array.sv' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+WARNING: [IP_Flow 19-4308] Project file '/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Risc_32_bit_fpga.v' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/State_IF_fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/mux2_4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Execute_Unit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_PC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/ipshared/26c5/src/Execute_Unit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/ipshared/26c5/src/Control_Unit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_IF_ID.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Risc_32_bit_fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Imm_Gen.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Data_Memory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/ip/design_1_Risc_32_bit_0_0/synth/design_1_Risc_32_bit_0_0.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Control_Unit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Register_Array.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_ID_EX.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/State_IF.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Instruction_Memory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Risc_32_bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Branch_Comparator.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_MEM_WB.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/State_IF_fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/mux2_4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Execute_Unit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_PC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/ipshared/26c5/src/Execute_Unit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/ipshared/26c5/src/Control_Unit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_IF_ID.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Risc_32_bit_fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Imm_Gen.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Data_Memory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/ip/design_1_Risc_32_bit_0_0/synth/design_1_Risc_32_bit_0_0.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Control_Unit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Register_Array.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_ID_EX.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/State_IF.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Instruction_Memory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Risc_32_bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Branch_Comparator.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_MEM_WB.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/State_IF_fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/mux2_4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Execute_Unit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_PC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/ipshared/26c5/src/Execute_Unit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/ipshared/26c5/src/Control_Unit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_IF_ID.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Risc_32_bit_fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Imm_Gen.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Data_Memory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/ip/design_1_Risc_32_bit_0_0/synth/design_1_Risc_32_bit_0_0.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Control_Unit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Register_Array.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_ID_EX.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/State_IF.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Instruction_Memory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Risc_32_bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Branch_Comparator.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_MEM_WB.sv:]
+open_bd_design {/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+create_bd_cell -type ip -vlnv user.org:user:Risc_32_bit_fpga:1.0 Risc_32_bit_fpga_0
+endgroup
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+report_ip_status -name ip_status
+ipx::unload_core /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/component.xml
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config {rst_polarity "ACTIVE_HIGH" }  [get_bd_pins clk_wiz_0/reset]
+INFO: [board_rule 100-100] create_bd_port -dir I reset_rtl -type rst
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY  /reset_rtl
+INFO: [board_rule 100-100] connect_bd_net /reset_rtl /clk_wiz_0/reset
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY ACTIVE_HIGH /reset_rtl
+WARNING: [board_rule 100-100] Board automation did not generate location constraint for /clk_wiz_0/reset. Users may need to specify the location constraint manually.
+apply_bd_automation -rule xilinx.com:bd_rule:board -config {Board_Interface "sys_clock ( System clock ) " }  [get_bd_pins clk_wiz_0/clk_in1]
+INFO: [board_rule 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /clk_wiz_0]
+INFO: [board_rule 100-100] set_property CONFIG.CLK_IN1_BOARD_INTERFACE sys_clock [get_bd_cells /clk_wiz_0]
+INFO: [board_rule 100-100] create_bd_port -dir I sys_clock -type clk
+INFO: [board_rule 100-100] set_property CONFIG.FREQ_HZ 100000000 /sys_clock
+INFO: [board_rule 100-100] set_property CONFIG.PHASE 0.000 /sys_clock
+INFO: [board_rule 100-100] connect_bd_net /sys_clock /clk_wiz_0/clk_in1
+INFO: [board_rule 100-100] set_property CONFIG.FREQ_HZ 100000000 /sys_clock
+endgroup
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins Risc_32_bit_fpga_0/clk]
+startgroup
+create_bd_port -dir I -from 31 -to 0 DataB_out
+connect_bd_net [get_bd_pins /Risc_32_bit_fpga_0/DataB_out] [get_bd_ports DataB_out]
+endgroup
+startgroup
+create_bd_port -dir I -from 31 -to 0 if_inst
+connect_bd_net [get_bd_pins /Risc_32_bit_fpga_0/if_inst] [get_bd_ports if_inst]
+endgroup
+startgroup
+create_bd_port -dir I -from 31 -to 0 if_pc
+connect_bd_net [get_bd_pins /Risc_32_bit_fpga_0/if_pc] [get_bd_ports if_pc]
+endgroup
+startgroup
+create_bd_port -dir O -from 31 -to 0 mem_ALU_out
+connect_bd_net [get_bd_pins /Risc_32_bit_fpga_0/mem_ALU_out] [get_bd_ports mem_ALU_out]
+endgroup
+startgroup
+create_bd_port -dir O -from 31 -to 0 ex_ForwardDataB
+connect_bd_net [get_bd_pins /Risc_32_bit_fpga_0/ex_ForwardDataB] [get_bd_ports ex_ForwardDataB]
+endgroup
+startgroup
+create_bd_port -dir O mem_MemRW
+connect_bd_net [get_bd_pins /Risc_32_bit_fpga_0/mem_MemRW] [get_bd_ports mem_MemRW]
+endgroup
+startgroup
+create_bd_port -dir O -from 31 -to 0 pc_next
+connect_bd_net [get_bd_pins /Risc_32_bit_fpga_0/pc_next] [get_bd_ports pc_next]
+endgroup
+regenerate_bd_layout
+startgroup
+set_property -dict [list CONFIG.RESET_TYPE {ACTIVE_LOW} CONFIG.RESET_PORT {resetn}] [get_bd_cells clk_wiz_0]
+WARNING: [BD 41-1684] Pin /clk_wiz_0/reset is now disabled. All connections to this pin have been removed. 
+delete_bd_objs [get_bd_nets reset_rtl_1]
+endgroup
+set_property -dict [list CONFIG.POLARITY {ACTIVE_LOW}] [get_bd_ports reset_rtl]
+connect_bd_net [get_bd_ports reset_rtl] [get_bd_pins clk_wiz_0/resetn]
+connect_bd_net [get_bd_ports reset_rtl] [get_bd_pins Risc_32_bit_fpga_0/rst_n]
+save_bd_design
+Wrote  : </data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:Risc_32_bit_fpga:1.0 [get_ips  design_1_Risc_32_bit_fpga_0_0] -log ip_upgrade.log
+Upgrading '/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_Risc_32_bit_fpga_0_0 from Risc_32_bit_fpga_v1_0 1.0 to Risc_32_bit_fpga_v1_0 1.0
+Wrote  : </data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_Risc_32_bit_fpga_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd]
+Wrote  : </data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd> 
+VHDL Output written to : /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Risc_32_bit_fpga_0 .
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_7ev_cc_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_cc_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_pciecc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_pciecc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_som:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_som_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_ev_som_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_som_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_7ev_cc_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_cc_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_pciecc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_pciecc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_som:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_som_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_ev_som_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_som_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_7ev_cc_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_cc_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_pciecc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_pciecc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_som:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_som_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_ev_som_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_som_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+Exporting to file /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+catch { config_ip_cache -export [get_ips -all design_1_Risc_32_bit_fpga_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_clk_wiz_0_0] }
+export_ip_user_files -of_objects [get_files /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 48 {design_1_Risc_32_bit_fpga_0_0_synth_1 design_1_clk_wiz_0_0_synth_1}
+[Sat Jun 26 08:19:40 2021] Launched design_1_Risc_32_bit_fpga_0_0_synth_1, design_1_clk_wiz_0_0_synth_1...
+Run output will be captured here:
+design_1_Risc_32_bit_fpga_0_0_synth_1: /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.runs/design_1_Risc_32_bit_fpga_0_0_synth_1/runme.log
+design_1_clk_wiz_0_0_synth_1: /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.runs/design_1_clk_wiz_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd] -directory /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.ip_user_files/sim_scripts -ip_user_files_dir /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.ip_user_files -ipstatic_source_dir /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.ip_user_files/ipstatic -lib_map_path [list {modelsim=/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.cache/compile_simlib/modelsim} {questa=/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.cache/compile_simlib/questa} {ies=/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.cache/compile_simlib/ies} {xcelium=/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.cache/compile_simlib/xcelium} {vcs=/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.cache/compile_simlib/vcs} {riviera=/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+set_property name Read_Data [get_bd_ports DataB_out]
+set_property name rst_n [get_bd_ports reset_rtl]
+set_property name clk [get_bd_ports sys_clock]
+set_property name instruction [get_bd_ports if_inst]
+set_property name pc [get_bd_ports if_pc]
+regenerate_bd_layout
+undo
+INFO: [Common 17-17] undo 'regenerate_bd_layout'
+set_property name mem_pc [get_bd_ports pc_next]
+undo
+INFO: [Common 17-17] undo 'set_property name mem_pc [get_bd_ports pc_next]'
+undo
+INFO: [Common 17-17] undo 'set_property name pc [get_bd_ports if_pc]'
+undo
+INFO: [Common 17-17] undo 'set_property name instruction [get_bd_ports if_inst]'
+undo
+INFO: [Common 17-17] undo 'set_property name clk [get_bd_ports sys_clock]'
+redo
+INFO: [Common 17-16] redo 'set_property name clk [get_bd_ports sys_clock]'
+redo
+INFO: [Common 17-16] redo 'set_property name instruction [get_bd_ports if_inst]'
+redo
+INFO: [Common 17-16] redo 'set_property name pc [get_bd_ports if_pc]'
+redo
+INFO: [Common 17-16] redo 'set_property name mem_pc [get_bd_ports pc_next]'
+regenerate_bd_layout -routing
+regenerate_bd_layout
+set_property name Write_Addr [get_bd_ports mem_ALU_out]
+set_property name Write_Data [get_bd_ports ex_ForwardDataB]
+regenerate_bd_layout
+refresh_design
+INFO: [Netlist 29-17] Analyzing 538 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+open_bd_design {/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd}
+set_property -dict [list CONFIG.FREQ_HZ {500000000}] [get_bd_ports clk]
+make_wrapper -files [get_files /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd] -top
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'PRIM_IN_FREQ' from '100.000' to '500.000' has been ignored for IP 'clk_wiz_0'
+Wrote  : </data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+add_files -norecurse /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+update_compile_order -fileset sources_1
+set_property top design_1_wrapper [current_fileset]
+update_compile_order -fileset sources_1
+generate_target all [get_files  /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Risc_32_bit_fpga_0 .
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_7ev_cc_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_cc_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_pciecc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_pciecc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_som:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_som_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_ev_som_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_som_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_7ev_cc_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_cc_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_pciecc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_pciecc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_som:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_som_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_ev_som_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_som_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_7ev_cc_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_cc_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_pciecc:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_pciecc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_som:part0:1.0 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_3eg_som_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_ev_som_es2:part0:1.1 available at /data_local/tools/Xilinx/Vivado/2018.1/data/boards/board_files/bdf-master/ultrazed_7ev_som_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+Exporting to file /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+catch { config_ip_cache -export [get_ips -all design_1_clk_wiz_0_0] }
+export_ip_user_files -of_objects [get_files /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 48 design_1_clk_wiz_0_0_synth_1
+[Sat Jun 26 14:22:58 2021] Launched design_1_clk_wiz_0_0_synth_1...
+Run output will be captured here: /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.runs/design_1_clk_wiz_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.srcs/sources_1/bd/design_1/design_1.bd] -directory /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.ip_user_files/sim_scripts -ip_user_files_dir /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.ip_user_files -ipstatic_source_dir /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.ip_user_files/ipstatic -lib_map_path [list {modelsim=/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.cache/compile_simlib/modelsim} {questa=/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.cache/compile_simlib/questa} {ies=/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.cache/compile_simlib/ies} {xcelium=/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.cache/compile_simlib/xcelium} {vcs=/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.cache/compile_simlib/vcs} {riviera=/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 48
+[Sat Jun 26 15:19:20 2021] Launched synth_1...
+Run output will be captured here: /data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.runs/synth_1/runme.log

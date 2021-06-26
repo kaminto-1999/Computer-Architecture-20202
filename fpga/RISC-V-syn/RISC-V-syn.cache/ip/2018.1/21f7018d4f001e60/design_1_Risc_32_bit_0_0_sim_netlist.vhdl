@@ -1,0 +1,12 @@
+-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-- --------------------------------------------------------------------------------
+-- Tool Version: Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
+-- Date        : Fri Jun 25 16:38:06 2021
+-- Host        : dtvc25-linux running 64-bit CentOS Linux release 7.9.2009 (Core)
+-- Command     : write_vhdl -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
+--               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_Risc_32_bit_0_0_sim_netlist.vhdl
+-- Design      : design_1_Risc_32_bit_0_0
+-- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
+--               synthesized. This netlist cannot be used for SDF annotated simulation.
+-- Device      : xc7z020clg484-1
+-- --------------------------------------------------------------------------------

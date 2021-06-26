@@ -2,8 +2,9 @@ module Reg_PC(
   input         clk             ,
   input         rst_n           ,
   input  [31:0] ALU_out         ,
+  input  [31:0] jump_pc         ,
   input         PCWrite         ,// From Hazard Detection, 1: No harzard; 0: Hazard detected
-  input         PCSel           ,// From Control Unit
+  input  [1:0]  PCSel           ,// From Control Unit
   output [31:0] pc_next          // To Instruction Mem
   );
   reg [31:0] pc_curr;
@@ -18,11 +19,14 @@ module Reg_PC(
         pc_curr <=  pc_curr;
       end
       else begin
-        if (PCSel) begin
+        if (PCSel == 1) begin
           pc_curr <= ALU_out;
         end
         else begin
-          pc_curr <= pc_plus_1;
+          if (PCSel == 0) begin
+            pc_curr <= pc_plus_1;
+          end
+          else pc_curr <= jump_pc;
         end
       end
     end

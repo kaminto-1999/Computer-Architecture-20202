@@ -7,7 +7,7 @@ module Control_Unit(
     input      [6:0] funct7 ,
     input      [2:0] funct3 ,
     output reg [2:0] ImmSel ,
-    output reg       PCSel  ,
+    output reg [1:0] PCSel  ,
     output reg       BrUn   ,
     output reg       ASel   ,
     output reg       BSel   ,
@@ -52,10 +52,6 @@ parameter auipc   = 7'b0010111;
 always @(*)
 begin
     case(opcode)
-    NoP:
-        begin
-            ALUSel              = ALUnop;
-        end
     R:
         case(funct3)
         3'b000:
@@ -64,7 +60,7 @@ begin
                 begin
                     PCSel       = 0; //PC=PC+4
                     ImmSel      = ImmSelR;
-                    BrUn        = 1'bx;
+                    //BrUn        = 1'b0;
                     ASel        = 0; //Reg
                     BSel        = 0; //Reg
                     ALUSel      = ALUadd;
@@ -76,7 +72,7 @@ begin
                 begin
                     PCSel       = 0; //PC=PC+4
                     ImmSel      = ImmSelR;
-                    BrUn        = 1'bx;
+                    //BrUn        = 1'b0;
                     ASel        = 0; //Reg
                     BSel        = 0; //Reg
                     ALUSel      = ALUsub;
@@ -274,7 +270,7 @@ begin
         endcase
     jalr:
         begin
-            PCSel               = 1; //ALU
+            PCSel               = 2; //jump_pc
             ImmSel              = ImmSelI; //Immediate type I
             // BrUn                = 1'bx;
             ASel                = 0; //Reg
@@ -286,7 +282,7 @@ begin
         end
     jal:
         begin
-            PCSel               = 1; //ALU
+            PCSel               = 2; //jump_pc
             ImmSel              = ImmSelJ; //Immediate type J
             ASel                = 1; //PC
             BSel                = 1; //Imm

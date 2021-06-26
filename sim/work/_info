@@ -16,243 +16,279 @@ Vz^m0385PR`k9A4i:CY5G_0
 o-quiet -auto_acc_if_foreign -work work +acc
 n@_opt
 OL;O;10.3_1;59
+R0
 vALU
-Z1 !s110 1623661398
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+r1
+!s85 0
+31
 !i10b 1
 !s100 5IHYFC4F^7OUzM5EzJ@fH1
 I8obzjaQJ?6Y?<N==ab3Oo0
-Z2 V`JN@9S9cnhjKRR_L]QIcM3
 R0
 w1623657947
 8/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/ALU.v
 F/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/ALU.v
 L0 1
-Z3 OL;L;10.3_1;59
-r1
-!s85 0
-31
-!s108 1623661398.731734
+Z2 OL;L;10.3_1;59
+!s108 1624697822.293185
 !s107 /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/ALU.v|
 !s90 -reportprogress|300|-nostats|-work|work|-vopt|/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/ALU.v|
 !i113 0
-Z4 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z3 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 n@a@l@u
 vBranch_Comparator
-Z5 !s110 1623661396
+R1
+r1
+!s85 0
+31
 !i10b 1
 !s100 ]e9;k8;3g=nHSZaT5RNI]3
 I[zSPi?Lh@53R[2Eh1_@WG2
-R2
 R0
 w1623397458
 8/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Branch_Comparator.v
 F/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Branch_Comparator.v
 L0 1
-R3
-r1
-!s85 0
-31
-!s108 1623661396.166078
+R2
+!s108 1624697822.414334
 !s107 /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Branch_Comparator.v|
 !s90 -reportprogress|300|-nostats|-work|work|-vopt|/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Branch_Comparator.v|
 !i113 0
-R4
+R3
 n@branch_@comparator
 vControl_Unit
-R5
+R1
+r1
+!s85 0
+31
 !i10b 1
-!s100 BBMO]9bSI>BI3zXNj5n=M3
-IN^RXQ0FAAU18d_AmVEhMR0
-R2
+!s100 mdQVl9HN[kL:m1JNEWYZY1
+IZ>S0V0Z2QhM9LQR?UWYj63
 R0
-w1623656543
+w1624693417
 8/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Control_Unit.v
 F/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Control_Unit.v
 L0 1
-R3
-r1
-!s85 0
-31
-!s108 1623661396.303206
+R2
+!s108 1624697822.542961
 !s107 /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Control_Unit.v|
 !s90 -reportprogress|300|-nostats|-work|work|-vopt|/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Control_Unit.v|
 !i113 0
-R4
+R3
 n@control_@unit
 vData_Memory
-R5
+R1
+r1
+!s85 0
+31
 !i10b 1
-!s100 <0N3JAabPMSWnkE45L2ba2
-IcN`^h=bEG1ojmm:>LzFiJ3
-R2
+!s100 QYC8gdjLHbi_UZ[=GeW;Q2
+IgM:0M^z_VK8I>X^[NK8`D2
 R0
-w1623661386
+w1624635166
 8/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Data_Memory.v
 F/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Data_Memory.v
 L0 1
-R3
-r1
-!s85 0
-31
-!s108 1623661396.458326
+R2
+!s108 1624697822.689204
 !s107 /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Data_Memory.v|
 !s90 -reportprogress|300|-nostats|-work|work|-vopt|/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Data_Memory.v|
 !i113 0
-R4
+R3
 n@data_@memory
 vExecute_Unit
-R5
-!i10b 1
-!s100 od?<V@;Z1eUlSY:^kJ6:;2
-IBlnfABT[5@M<PczBIc6`G3
-R2
-R0
-w1623577779
-8/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Execute_Unit.v
-F/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Execute_Unit.v
-L0 1
-R3
+R1
 r1
 !s85 0
 31
-!s108 1623661396.592167
+!i10b 1
+!s100 ;S]i_A00fAEi2kJ62[?eg1
+IL=O9YeZ;WFjo5j5MCNbW00
+R0
+w1624697038
+8/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Execute_Unit.v
+F/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Execute_Unit.v
+L0 1
+R2
+!s108 1624697822.820205
 !s107 /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Execute_Unit.v|
 !s90 -reportprogress|300|-nostats|-work|work|-vopt|/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Execute_Unit.v|
 !i113 0
-R4
+R3
 n@execute_@unit
 vForwarding_Unit
-R5
+R1
+r1
+!s85 0
+31
 !i10b 1
 !s100 <^ai8R7DoT^0]XIBN4Z3R1
 I;HAkC8[3ljEdBzJ:PPeaF3
-R2
 R0
 w1623655521
 8/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Forwarding_Unit.v
 F/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Forwarding_Unit.v
 L0 1
-R3
-r1
-!s85 0
-31
-!s108 1623661396.722564
+R2
+!s108 1624697822.958864
 !s107 /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Forwarding_Unit.v|
 !s90 -reportprogress|300|-nostats|-work|work|-vopt|/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Forwarding_Unit.v|
 !i113 0
-R4
+R3
 n@forwarding_@unit
 vHazard_Detection_Unit
-R5
+R1
+r1
+!s85 0
+31
 !i10b 1
-!s100 Q@n2WWJcG8;3D36PNR8Ng0
-Iz6>TP6V2`jGF1<ioRJM[T3
-R2
+!s100 HGnCHg`aYG:o:7ZzAci_93
+I0Wh];mjNU6BghZKEOiHme1
 R0
-w1623643606
+w1624632120
 8/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Hazard_Detection_Unit.v
 F/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Hazard_Detection_Unit.v
 L0 1
-R3
-r1
-!s85 0
-31
-!s108 1623661396.855155
+R2
+!s108 1624697823.093189
 !s107 /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Hazard_Detection_Unit.v|
 !s90 -reportprogress|300|-nostats|-work|work|-vopt|/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Hazard_Detection_Unit.v|
 !i113 0
-R4
+R3
 n@hazard_@detection_@unit
 vImm_Gen
-Z6 !s110 1623661397
-!i10b 1
-!s100 ?G94A4[gd`hmYkZ@CCI5i2
-I1Lg5G??JB[63aW8^Ti39]0
-R2
-R0
-w1623397817
-8/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Imm_Gen.v
-F/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Imm_Gen.v
-L0 1
-R3
+R1
 r1
 !s85 0
 31
-!s108 1623661396.982945
+!i10b 1
+!s100 gJAkQfzo5lUE<O]I9[bYe1
+I?@0YSd;jQoR]>BN:ZhCY[1
+R0
+w1624630221
+8/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Imm_Gen.v
+F/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Imm_Gen.v
+L0 1
+R2
+!s108 1624697823.234036
 !s107 /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Imm_Gen.v|
 !s90 -reportprogress|300|-nostats|-work|work|-vopt|/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Imm_Gen.v|
 !i113 0
-R4
+R3
 n@imm_@gen
 vInstruction_Decode
-R6
+!s110 1624697823
 !i10b 1
 !s100 RMaH=z69fWPCcC55OUI]^0
 Ia5VX4iVG=@B^e3j[;9WC:0
-R2
+R1
 R0
 w1623397854
 8/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Instruction_Decode.v
 F/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Instruction_Decode.v
 L0 1
-R3
+R2
 r1
 !s85 0
 31
-!s108 1623661397.126365
+!s108 1624697823.376784
 !s107 /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Instruction_Decode.v|
 !s90 -reportprogress|300|-nostats|-work|work|-vopt|/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Instruction_Decode.v|
 !i113 0
-R4
+R3
 n@instruction_@decode
 vInstruction_Memory
-R6
-!i10b 1
-!s100 ==28Q5GNzfL_BG_DEKD9F1
-IF0MWDMUd2dz:kN6F2z4BF3
-R2
-R0
-w1623659786
-8/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Instruction_Memory.v
-F/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Instruction_Memory.v
-L0 1
-R3
+R1
 r1
 !s85 0
 31
-!s108 1623661397.270989
+!i10b 1
+!s100 n[<KlMccef?0@BPc]9Tel0
+I_kPgODb6`=ML`Wzi5c[5V0
+R0
+w1624633539
+8/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Instruction_Memory.v
+F/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Instruction_Memory.v
+L0 1
+R2
+!s108 1624697823.513499
 !s107 /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Instruction_Memory.v|
 !s90 -reportprogress|300|-nostats|-work|work|-vopt|/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Instruction_Memory.v|
 !i113 0
-R4
+R3
 n@instruction_@memory
 vmux2_4
-R6
+R1
+r1
+!s85 0
+31
 !i10b 1
 !s100 h5I:L:bjE7ZB9JTMee=7o3
 I@A;_c>Zj6^YicOcLo;^L82
-R2
 R0
 w1623581237
 8/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/mux2_4.v
 F/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/mux2_4.v
 L0 1
-R3
-r1
-!s85 0
-31
+R2
 !s108 1623661397.402193
 !s107 /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/mux2_4.v|
 !s90 -reportprogress|300|-nostats|-work|work|-vopt|/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/mux2_4.v|
 !i113 0
-R4
+R3
+vmux4_1
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 ^3Uf1z7:nc@cSZ7Zn^4dR0
+ICb_cc^>c:3bg10QFIWzi@0
+R0
+w1624695755
+8/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/mux4_1.v
+F/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/mux4_1.v
+L0 1
+R2
+!s108 1624697823.648836
+!s107 /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/mux4_1.v|
+!s90 -reportprogress|300|-nostats|-work|work|-vopt|/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/mux4_1.v|
+!i113 0
+R3
+XParameter_sv_unit
+Z4 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
+!s110 1624696552
+!i10b 1
+!s100 k]naakV3oh7Xb?eB:R53Q1
+IZb`;KU]J]E3cQmF;6[^HQ0
+VZb`;KU]J]E3cQmF;6[^HQ0
+!i103 1
+S1
+R0
+w1623398532
+8/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Parameter.sv
+F/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Parameter.sv
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1624696551.941008
+!s107 /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Parameter.sv|
+!s90 -reportprogress|300|-nostats|-work|work|-vopt|-sv|/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Parameter.sv|
+!i113 0
+Z5 o-work work -sv -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+n@parameter_sv_unit
 vReg_EX_MEM
-Z7 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
-R6
+R4
+R1
+r1
+!s85 0
+31
 !i10b 1
 !s100 >Z026_Q9SA@4XaCHB4o<L3
 I3TR^UalZjGz;:5=c@hUhc1
-R2
 !s105 Reg_EX_MEM_sv_unit
 S1
 R0
@@ -260,47 +296,45 @@ w1623575304
 8/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_EX_MEM.sv
 F/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_EX_MEM.sv
 L0 1
-R3
-r1
-!s85 0
-31
-!s108 1623661397.521717
+R2
+!s108 1624697823.792348
 !s107 /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_EX_MEM.sv|
 !s90 -reportprogress|300|-nostats|-work|work|-vopt|-sv|/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_EX_MEM.sv|
 !i113 0
-Z8 o-work work -sv -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R5
 n@reg_@e@x_@m@e@m
 vReg_ID_EX
-R7
-R6
-!i10b 1
-!s100 hlXfM8_l^kgAW3DQnDl;U0
-IQW<O0]k3PmGWNC:en?k]]3
-R2
-!s105 Reg_ID_EX_sv_unit
-S1
-R0
-w1623580859
-8/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_ID_EX.sv
-F/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_ID_EX.sv
-L0 1
-R3
+R4
+R1
 r1
 !s85 0
 31
-!s108 1623661397.659107
+!i10b 1
+!s100 MPT6nEI6hEZ>2BD=C2_?b3
+IF`zmi^AeL>CK2494PBKiN2
+!s105 Reg_ID_EX_sv_unit
+S1
+R0
+w1624697980
+8/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_ID_EX.sv
+F/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_ID_EX.sv
+L0 1
+R2
+!s108 1624698025.067890
 !s107 /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_ID_EX.sv|
 !s90 -reportprogress|300|-nostats|-work|work|-vopt|-sv|/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_ID_EX.sv|
 !i113 0
-R8
+R5
 n@reg_@i@d_@e@x
 vReg_IF_ID
-R7
-R6
+R4
+R1
+r1
+!s85 0
+31
 !i10b 1
 !s100 KFh7Mgn=_l3MiOX`d4nY^3
 IGCT9giRJQ0Kn?W157h>@E3
-R2
 !s105 Reg_IF_ID_sv_unit
 S1
 R0
@@ -308,23 +342,22 @@ w1623398234
 8/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_IF_ID.sv
 F/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_IF_ID.sv
 L0 1
-R3
-r1
-!s85 0
-31
-!s108 1623661397.792321
+R2
+!s108 1624697823.941221
 !s107 /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_IF_ID.sv|
 !s90 -reportprogress|300|-nostats|-work|work|-vopt|-sv|/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_IF_ID.sv|
 !i113 0
-R8
+R5
 n@reg_@i@f_@i@d
 vReg_MEM_WB
-R7
+R4
 R1
+r1
+!s85 0
+31
 !i10b 1
 !s100 b?D1om`B@fU;`HQ1W6PjP3
 IQBVm`Md:VO:[K_V2[PUKN2
-R2
 !s105 Reg_MEM_WB_sv_unit
 S1
 R0
@@ -332,120 +365,112 @@ w1623579218
 8/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_MEM_WB.sv
 F/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_MEM_WB.sv
 L0 1
-R3
-r1
-!s85 0
-31
-!s108 1623661397.933135
+R2
+!s108 1624697824.086891
 !s107 /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_MEM_WB.sv|
 !s90 -reportprogress|300|-nostats|-work|work|-vopt|-sv|/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_MEM_WB.sv|
 !i113 0
-R8
+R5
 n@reg_@m@e@m_@w@b
 vReg_PC
 R1
+r1
+!s85 0
+31
 !i10b 1
-!s100 _R_P<a[WBz]F67W<KO2lH3
-I7F^J]b7kYc_TjZY^eY8Ik1
-R2
+!s100 jSe3hT1Z^8;AE36J>_<KG2
+IM62BOInPEWA5@NE3BEo>b2
 R0
-w1623643230
+w1624696930
 8/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_PC.v
 F/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_PC.v
 L0 1
-R3
-r1
-!s85 0
-31
-!s108 1623661398.073087
+R2
+!s108 1624697824.214875
 !s107 /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_PC.v|
 !s90 -reportprogress|300|-nostats|-work|work|-vopt|/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_PC.v|
 !i113 0
-R4
+R3
 n@reg_@p@c
 vRegister_Array
-R7
+R4
 R1
+r1
+!s85 0
+31
 !i10b 1
-!s100 QG261:G84Q]JD14dTKbHU3
-I4U:J1iTe6lFKf5@Tf@CAG0
-R2
+!s100 UFei3@;5I8K7bkI8k8Jah3
+I7fdF2nUghW;jc1j4>^LQB1
 !s105 Register_Array_sv_unit
 S1
 R0
-w1623580479
+w1624632439
 8/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Register_Array.sv
 F/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Register_Array.sv
 L0 1
-R3
-r1
-!s85 0
-31
-!s108 1623661398.202598
+R2
+!s108 1624697824.330127
 !s107 /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Register_Array.sv|
 !s90 -reportprogress|300|-nostats|-work|work|-vopt|-sv|/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Register_Array.sv|
 !i113 0
-R8
+R5
 n@register_@array
 vRisc_32_bit
 R1
+r1
+!s85 0
+31
 !i10b 1
-!s100 d@MilMZFU_e=gm4S7EHS?1
-IN70AB^cKZEY5_@[Z3i5Q>2
-R2
+!s100 =Q132DOVh5zPO3iTU`<lE3
+II33e^PUWWYRCIn5X_8`T>2
 R0
-w1623661331
+w1624698091
 8/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Risc_32_bit.v
 F/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Risc_32_bit.v
 L0 1
-R3
-r1
-!s85 0
-31
-!s108 1623661398.322507
+R2
+!s108 1624698121.355125
 !s107 /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Risc_32_bit.v|
 !s90 -reportprogress|300|-nostats|-work|work|-vopt|/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Risc_32_bit.v|
 !i113 0
-R4
+R3
 n@risc_32_bit
 vState_IF
 R1
-!i10b 1
-!s100 n^Lo7PRamh`@oAcbW]80<1
-Ie:@P=>TVS>?n5f<C`92J`1
-R2
-R0
-w1623399912
-8/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/State_IF.v
-F/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/State_IF.v
-L0 1
-R3
 r1
 !s85 0
 31
-!s108 1623661398.456553
+!i10b 1
+!s100 Q_CSB>bgkgVU2FYR33>UC3
+I59C2lGG0hA0<lBWkYTaXN0
+R0
+w1624696431
+8/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/State_IF.v
+F/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/State_IF.v
+L0 1
+R2
+!s108 1624697824.604372
 !s107 /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/State_IF.v|
 !s90 -reportprogress|300|-nostats|-work|work|-vopt|/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/State_IF.v|
 !i113 0
-R4
+R3
 n@state_@i@f
 vtop_tb
 R1
+r1
+!s85 0
+31
 !i10b 1
 !s100 DLI6XXT57N9LDnUVBLkhJ3
 I2ba2I>`cALU5NRngANR<`3
-R2
 R0
 w1623641907
 8/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/top_tb.v
 F/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/top_tb.v
 L0 2
-R3
-r1
-!s85 0
-31
-!s108 1623661398.594256
+R2
+!s108 1624697824.748249
 !s107 /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/top_tb.v|
 !s90 -reportprogress|300|-nostats|-work|work|-vopt|/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/top_tb.v|
 !i113 0
-R4
+R3

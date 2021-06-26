@@ -1,0 +1,134 @@
+/data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_MEM_WB.sv {1 {vlog -nostats -work work -vopt -sv /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_MEM_WB.sv
+QuestaSim-64 vlog 10.3_1 Compiler 2014.02 Feb 10 2014
+-- Compiling module Reg_MEM_WB
+
+Top level modules:
+	Reg_MEM_WB
+
+} {} {}} /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_PC.v {1 {vlog -nostats -work work -vopt /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_PC.v
+QuestaSim-64 vlog 10.3_1 Compiler 2014.02 Feb 10 2014
+-- Compiling module Reg_PC
+
+Top level modules:
+	Reg_PC
+
+} {} {}} /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/top_tb.v {1 {vlog -nostats -work work -vopt /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/top_tb.v
+QuestaSim-64 vlog 10.3_1 Compiler 2014.02 Feb 10 2014
+-- Compiling module top_tb
+
+Top level modules:
+	top_tb
+
+} {} {}} /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Control_Unit.v {1 {vlog -nostats -work work -vopt /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Control_Unit.v
+QuestaSim-64 vlog 10.3_1 Compiler 2014.02 Feb 10 2014
+-- Compiling module Control_Unit
+
+Top level modules:
+	Control_Unit
+
+} {} {}} /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_ID_EX.sv {1 {vlog -nostats -work work -vopt -sv /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_ID_EX.sv
+QuestaSim-64 vlog 10.3_1 Compiler 2014.02 Feb 10 2014
+-- Compiling module Reg_ID_EX
+
+Top level modules:
+	Reg_ID_EX
+
+} {} {}} /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/ALU.v {1 {vlog -nostats -work work -vopt /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/ALU.v
+QuestaSim-64 vlog 10.3_1 Compiler 2014.02 Feb 10 2014
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Data_Memory.v {1 {vlog -nostats -work work -vopt /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Data_Memory.v
+QuestaSim-64 vlog 10.3_1 Compiler 2014.02 Feb 10 2014
+-- Compiling module Data_Memory
+
+Top level modules:
+	Data_Memory
+
+} {} {}} /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Forwarding_Unit.v {1 {vlog -nostats -work work -vopt /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Forwarding_Unit.v
+QuestaSim-64 vlog 10.3_1 Compiler 2014.02 Feb 10 2014
+-- Compiling module Forwarding_Unit
+
+Top level modules:
+	Forwarding_Unit
+
+} {} {}} /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Instruction_Memory.v {1 {vlog -nostats -work work -vopt /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Instruction_Memory.v
+QuestaSim-64 vlog 10.3_1 Compiler 2014.02 Feb 10 2014
+-- Compiling module Instruction_Memory
+
+Top level modules:
+	Instruction_Memory
+
+} {} {}} /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_IF_ID.sv {1 {vlog -nostats -work work -vopt -sv /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_IF_ID.sv
+QuestaSim-64 vlog 10.3_1 Compiler 2014.02 Feb 10 2014
+-- Compiling module Reg_IF_ID
+
+Top level modules:
+	Reg_IF_ID
+
+} {} {}} /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_EX_MEM.sv {1 {vlog -nostats -work work -vopt -sv /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Reg_EX_MEM.sv
+QuestaSim-64 vlog 10.3_1 Compiler 2014.02 Feb 10 2014
+-- Compiling module Reg_EX_MEM
+
+Top level modules:
+	Reg_EX_MEM
+
+} {} {}} /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Imm_Gen.v {1 {vlog -nostats -work work -vopt /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Imm_Gen.v
+QuestaSim-64 vlog 10.3_1 Compiler 2014.02 Feb 10 2014
+-- Compiling module Imm_Gen
+
+Top level modules:
+	Imm_Gen
+
+} {} {}} /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Instruction_Decode.v {1 {vlog -nostats -work work -vopt /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Instruction_Decode.v
+QuestaSim-64 vlog 10.3_1 Compiler 2014.02 Feb 10 2014
+-- Compiling module Instruction_Decode
+
+Top level modules:
+	Instruction_Decode
+
+} {} {}} /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/mux4_1.v {1 {vlog -nostats -work work -vopt /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/mux4_1.v
+QuestaSim-64 vlog 10.3_1 Compiler 2014.02 Feb 10 2014
+-- Compiling module mux4_1
+
+Top level modules:
+	mux4_1
+
+} {} {}} /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Hazard_Detection_Unit.v {1 {vlog -nostats -work work -vopt /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Hazard_Detection_Unit.v
+QuestaSim-64 vlog 10.3_1 Compiler 2014.02 Feb 10 2014
+-- Compiling module Hazard_Detection_Unit
+
+Top level modules:
+	Hazard_Detection_Unit
+
+} {} {}} /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/State_IF.v {1 {vlog -nostats -work work -vopt /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/State_IF.v
+QuestaSim-64 vlog 10.3_1 Compiler 2014.02 Feb 10 2014
+-- Compiling module State_IF
+
+Top level modules:
+	State_IF
+
+} {} {}} /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Execute_Unit.v {1 {vlog -nostats -work work -vopt /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Execute_Unit.v
+QuestaSim-64 vlog 10.3_1 Compiler 2014.02 Feb 10 2014
+-- Compiling module Execute_Unit
+
+Top level modules:
+	Execute_Unit
+
+} {} {}} /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Branch_Comparator.v {1 {vlog -nostats -work work -vopt /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Branch_Comparator.v
+QuestaSim-64 vlog 10.3_1 Compiler 2014.02 Feb 10 2014
+-- Compiling module Branch_Comparator
+
+Top level modules:
+	Branch_Comparator
+
+} {} {}} /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Register_Array.sv {1 {vlog -nostats -work work -vopt -sv /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Register_Array.sv
+QuestaSim-64 vlog 10.3_1 Compiler 2014.02 Feb 10 2014
+-- Compiling module Register_Array
+
+Top level modules:
+	Register_Array
+
+} {} {}}

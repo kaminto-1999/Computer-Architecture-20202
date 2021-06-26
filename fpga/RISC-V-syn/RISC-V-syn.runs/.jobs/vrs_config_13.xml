@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="design_1_clk_wiz_0_0_synth_1" LaunchDir="/data1/workspace/phucph0/new/Computer-Architecture-20202/fpga/RISC-V-syn/RISC-V-syn.runs/design_1_clk_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

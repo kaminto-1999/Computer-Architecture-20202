@@ -10,7 +10,7 @@ module Reg_ID_EX (
   input  wire [4:0]  id_rs1     ,
   input  wire [4:0]  id_rs2     ,
   input       [2:0]  id_ImmSel  ,
-  input              id_PCSel   ,
+  input       [1:0]  id_PCSel   ,
   input              id_BrUn    ,
   input              id_ASel    ,
   input              id_BSel    ,
@@ -18,6 +18,7 @@ module Reg_ID_EX (
   input              id_RegWEn  ,
   input       [1:0]  id_WBSel   ,
   input       [3:0]  id_ALUSel  ,
+  input       [31:0] id_imm     ,
   //output                       
   output reg  [31:0] ex_inst    ,
   output reg  [31:0] ex_DataA   ,
@@ -27,7 +28,8 @@ module Reg_ID_EX (
   output reg  [4:0]  ex_rs1     ,
   output reg  [4:0]  ex_rs2     ,
   output reg  [2:0]  ex_ImmSel  ,
-  output reg         ex_PCSel   ,
+  output reg  [31:0] ex_imm     ,
+  output reg  [1:0]  ex_PCSel   ,
   output reg         ex_BrUn    ,
   output reg         ex_ASel    ,
   output reg         ex_BSel    ,
@@ -39,6 +41,7 @@ module Reg_ID_EX (
 
   always @ (posedge clk) begin
     if (!rst_n) begin
+      ex_imm   <= 0;
       ex_inst  <= 0;
       ex_pc    <= 0;
       ex_DataA <= 0;
@@ -56,6 +59,7 @@ module Reg_ID_EX (
       ex_ImmSel<= 0;
       ex_WBSel <= 0;
     end else if (1) begin
+      ex_imm   <= id_imm   ;
       ex_inst  <= id_inst  ;
       ex_pc    <= id_pc    ;
       ex_DataA <= id_DataA ;

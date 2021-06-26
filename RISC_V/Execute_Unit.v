@@ -12,7 +12,7 @@ module Execute_Unit(
   input [31:0] ex_DataB   ,
   input [31:0] imm        ,
   input [31:0] wb_WBData  ,
-  input [1:0]  ex_WBSel   ,
+///  input [1:0]  ex_WBSel   ,
   input [3:0]  ex_ALUSel      ,
   output[31:0] ex_ALU_out     ,
   output       ex_BrEq        ,
@@ -23,12 +23,13 @@ module Execute_Unit(
   wire [31:0] ALU_DataB   ;
   wire [31:0] ForwardDataA;
   wire [31:0] ForwardDataB;
+  wire zero_flag;
   assign ex_ForwardDataB = ForwardDataB;
   assign ALU_DataA = id_ASel ? ex_pc : ForwardDataA;
   assign ALU_DataB = id_BSel ? imm   : ForwardDataB;
 //=========================INSTANCE=========================//
 //
-  mux2_4 ForwardA_mux
+  mux4_1 ForwardA_mux
   (
   .sel(ForwardASel ),
   .in0(ex_DataA    ),
@@ -38,7 +39,7 @@ module Execute_Unit(
   .out(ForwardDataA) 
   );
 //
-  mux2_4 ForwardB_mux
+  mux4_1 ForwardB_mux
   (
   .sel(ForwardBSel ),
   .in0(ex_DataB    ),
@@ -50,11 +51,11 @@ module Execute_Unit(
 //Branch Comparator
   Branch_Comparator Branch_Comparator_i
   (
-  .BrUn       (BrUn    ),
-  .ex_DataA   (ex_DataA),
-  .ex_DataB   (ex_DataB),
-  .BrEq       (BrEq    ),
-  .BrLt       (BrLt    ) 
+  .BrUn       (id_BrUn    ),
+  .ex_DataA   (ex_DataA   ),
+  .ex_DataB   (ex_DataB   ),
+  .BrEq       (ex_BrEq    ),
+  .BrLt       (ex_BrLt    ) 
   );
 //ALU
   ALU ALU_Unit

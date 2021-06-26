@@ -1,0 +1,16 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
+| Date         : Sat Jun 26 08:19:32 2021
+| Host         : dtvc25-linux running 64-bit CentOS Linux release 7.9.2009 (Core)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_Risc_32_bit_fpga_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_Risc_32_bit_fpga_0_0 (user.org:user:Risc_32_bit_fpga:1.0 (Rev. 2)) to Vivado generation flows.
+

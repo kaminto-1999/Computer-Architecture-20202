@@ -12,8 +12,8 @@ module Risc_32_bit
   //IF State
   wire [31:0] if_inst;
   wire [31:0] if_pc  ;
-  wire [31:0] id_pc  ;
   //ID State
+  wire [31:0] id_pc    ;
   wire [6:0]  id_opcode;
   wire [31:0] id_inst  ;
   wire [4:0]  id_rd    ;
@@ -22,7 +22,8 @@ module Risc_32_bit
   wire [2:0]  id_funct3;
   wire [6:0]  id_funct7;
   wire [2:0]  id_ImmSel;
-  wire        id_PCSel ;
+  wire [31:0] id_imm   ;
+  wire [1:0]  id_PCSel ;
   wire        id_BrUn  ;
   wire        id_ASel  ;
   wire        id_BSel  ;
@@ -32,6 +33,7 @@ module Risc_32_bit
   wire [3:0]  id_ALUSel;
   wire [31:0] id_DataA ;
   wire [31:0] id_DataB ;
+  wire [31:0] id_jump_pc;
   //EX State
   wire [31:0] ex_imm         ;
   wire        ex_we          ;
@@ -44,7 +46,7 @@ module Risc_32_bit
   wire [2:0]  ex_ImmSel      ;
   wire        ex_BrEq        ;
   wire        ex_BrLT        ;
-  wire        ex_PCSel       ;
+  wire [1:0]  ex_PCSel       ;
   wire        ex_BrUn        ;
   wire        ex_ASel        ;
   wire        ex_BSel        ;
@@ -87,6 +89,7 @@ module Risc_32_bit
   .rst_n      (rst_n       ),
   .ex_ALU_out (ex_ALU_out  ),
   .PCWrite    (PCWrite     ),
+  .jump_pc    (id_jump_pc  ),
   .PCSel      (id_PCSel    ),
   .instruction(if_inst     ),
   .pc         (if_pc       ) 
@@ -108,6 +111,7 @@ module Risc_32_bit
   assign id_rs2    = ((id_ImmSel == ImmSelR) || (id_ImmSel == ImmSelB) || (id_ImmSel== ImmSelS)) ? id_inst[24:20] : 0; 
   assign id_funct3 = ((id_ImmSel != ImmSelJ) || (id_ImmSel != ImmSelU)) ? id_inst[14:12] : 0;
   assign id_funct7 = (id_ImmSel == ImmSelR) ? id_inst[31:25] : 0;
+  assign id_jump_pc= (id_ImmSel == ImmSelB) ? (id_pc + id_imm) : 0;
 //Control_Unit
   Control_Unit Control_Unit_i
   (
@@ -141,6 +145,13 @@ module Risc_32_bit
   .DataA        (id_DataA  ),
   .DataB        (id_DataB  ) 
   );
+//Imm_Gen
+  Imm_Gen ImmGen_i
+  (
+  .inst       (id_inst    ),
+  .ImmSel     (id_ImmSel  ),
+  .imm        (id_imm     ) 
+  );
 //=========================ID/EX REG=========================//
   Reg_ID_EX Reg_ID_EX
   (
@@ -153,6 +164,7 @@ module Risc_32_bit
   .id_rd    (id_rd    ),
   .id_rs1   (id_rs1   ),
   .id_rs2   (id_rs2   ),
+  .id_imm   (id_imm   ),
   .id_ImmSel(id_ImmSel),
   .id_PCSel (id_PCSel ),
   .id_BrUn  (id_BrUn  ),
@@ -169,6 +181,7 @@ module Risc_32_bit
   .ex_rd    (ex_rd    ),
   .ex_rs1   (ex_rs1   ),
   .ex_rs2   (ex_rs2   ),
+  .ex_imm   (ex_imm   ),
   .ex_ImmSel(ex_ImmSel),
   .ex_PCSel (ex_PCSel ),
   .ex_BrUn  (ex_BrUn  ),
@@ -189,28 +202,19 @@ module Risc_32_bit
   .id_ASel        (ex_ASel        ),
   .id_BSel        (ex_BSel        ),
   .ex_pc          (ex_pc          ),
-  .ex_DataA       (ex_DataA       ),
-  .ex_DataB       (ex_DataB       ),
-  .wb_WBData      (wb_WBData      ),
-  .ex_WBSel       (ex_WBSel       ),
-  .ex_ALUSel      (ex_ALUSel      ),
-  .imm            (ex_imm         ),
   .mem_ALU_out    (mem_ALU_out    ),
   .ForwardASel    (ForwardASel    ),
   .ForwardBSel    (ForwardBSel    ),
+  .ex_DataA       (ex_DataA       ),
+  .ex_DataB       (ex_DataB       ),
+  .imm            (ex_imm         ),
+  .wb_WBData      (wb_WBData      ),
+//  .ex_WBSel       (ex_WBSel       ),
+  .ex_ALUSel      (ex_ALUSel      ),
   .ex_ALU_out     (ex_ALU_out     ),
   .ex_ForwardDataB(ex_ForwardDataB),
   .ex_BrEq        (ex_BrEq        ),
   .ex_BrLT        (ex_BrLT        ) 
-  );
-//Imm_Gen
-  Imm_Gen ImmGen_i
-  (
-  .clk        (clk        ),
-  .rst_n      (rst_n      ),
-  .inst       (ex_inst    ),
-  .ImmSel     (ex_ImmSel  ),
-  .imm        (ex_imm     ) 
   );
 //=========================Reg EX/MEM=========================//
 
@@ -271,7 +275,7 @@ module Risc_32_bit
   );
 //
   wire [31:0] mem_pc_plus_1 = mem_pc + 32'h0001;
-  mux2_4 WBMux_i
+  mux4_1 WBMux_i
   (
   .sel(mem_WBSel    ),
   .in0(DataB_out    ),

@@ -33,6 +33,13 @@ QuestaSim-64 vlog 10.3_1 Compiler 2014.02 Feb 10 2014
 Top level modules:
 	Reg_ID_EX
 
+} {} {}} /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Data_Memory.v {1 {vlog -nostats -work work -vopt /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Data_Memory.v
+QuestaSim-64 vlog 10.3_1 Compiler 2014.02 Feb 10 2014
+-- Compiling module Data_Memory
+
+Top level modules:
+	Data_Memory
+
 } {} {}} /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/ALU.v {1 {vlog -nostats -work work -vopt /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/ALU.v
 QuestaSim-64 vlog 10.3_1 Compiler 2014.02 Feb 10 2014
 -- Compiling module ALU
@@ -82,12 +89,12 @@ QuestaSim-64 vlog 10.3_1 Compiler 2014.02 Feb 10 2014
 Top level modules:
 	Instruction_Decode
 
-} {} {}} /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Hazard_Detection_Unit.v {1 {vlog -nostats -work work -vopt /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Hazard_Detection_Unit.v
+} {} {}} /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/State_IF.v {1 {vlog -nostats -work work -vopt /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/State_IF.v
 QuestaSim-64 vlog 10.3_1 Compiler 2014.02 Feb 10 2014
--- Compiling module Hazard_Detection_Unit
+-- Compiling module State_IF
 
 Top level modules:
-	Hazard_Detection_Unit
+	State_IF
 
 } {} {}} /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/mux2_4.v {1 {vlog -nostats -work work -vopt /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/mux2_4.v
 QuestaSim-64 vlog 10.3_1 Compiler 2014.02 Feb 10 2014
@@ -96,12 +103,12 @@ QuestaSim-64 vlog 10.3_1 Compiler 2014.02 Feb 10 2014
 Top level modules:
 	mux2_4
 
-} {} {}} /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/State_IF.v {1 {vlog -nostats -work work -vopt /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/State_IF.v
+} {} {}} /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Hazard_Detection_Unit.v {1 {vlog -nostats -work work -vopt /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Hazard_Detection_Unit.v
 QuestaSim-64 vlog 10.3_1 Compiler 2014.02 Feb 10 2014
--- Compiling module State_IF
+-- Compiling module Hazard_Detection_Unit
 
 Top level modules:
-	State_IF
+	Hazard_Detection_Unit
 
 } {} {}} /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Execute_Unit.v {1 {vlog -nostats -work work -vopt /data1/workspace/phucph0/new/Computer-Architecture-20202/RISC_V/Execute_Unit.v
 QuestaSim-64 vlog 10.3_1 Compiler 2014.02 Feb 10 2014
