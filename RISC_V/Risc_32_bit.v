@@ -288,6 +288,9 @@ module Risc_32_bit
 
   Hazard_Detection_Unit Hazard_Detection_Unit_i
   (
+  .clk            (clk           ),
+  .rst_n          (rst_n         ),
+  .opcode         (id_opcode     ),
   .id_rs1         (id_rs1        ),
   .id_rs2         (id_rs2        ),
   .ex_rd          (ex_rd         ),
